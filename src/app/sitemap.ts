@@ -2,7 +2,11 @@ import { MetadataRoute } from "next";
 import { SERVICES_CATALOG } from "@/lib/servicesData";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://aura-dental-studio.demo";
+  const baseUrl = process.env.VERCEL_URL
+    ? `https://${process.env.VERCEL_URL}`
+    : process.env.NEXT_PUBLIC_SITE_URL
+    ? process.env.NEXT_PUBLIC_SITE_URL
+    : "http://localhost:3000";
 
   const staticRoutes = [
     "",

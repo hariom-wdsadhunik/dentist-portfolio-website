@@ -19,7 +19,7 @@ export const Footer: React.FC = () => {
               Modern, gentle dentistry designed around your comfort, schedule, and confidence in Downtown Austin.
             </p>
             <div className="pt-2 text-xs text-[#D4A373] bg-[#082824] p-3 rounded-md border border-[#082824]">
-              <strong>Note:</strong> Aura Dental Studio is a fictional demo portfolio project built for web engineering and design showcase purposes.
+              <strong>Portfolio Showcase:</strong> Aura Dental Studio is a sample portfolio demonstration project created for web engineering and UX showcase purposes.
             </div>
           </div>
 
@@ -33,7 +33,7 @@ export const Footer: React.FC = () => {
                 <Link href="/" className="hover:text-white transition-colors">Home</Link>
               </li>
               <li>
-                <Link href="/about" className="hover:text-white transition-colors">About & Our Team</Link>
+                <Link href="/about" className="hover:text-white transition-colors">About &amp; Our Team</Link>
               </li>
               <li>
                 <Link href="/services" className="hover:text-white transition-colors">Services Catalog</Link>
@@ -42,13 +42,13 @@ export const Footer: React.FC = () => {
                 <Link href="/experience" className="hover:text-white transition-colors">Patient Comfort Care</Link>
               </li>
               <li>
-                <Link href="/testimonials" className="hover:text-white transition-colors">Stories & Reviews</Link>
+                <Link href="/testimonials" className="hover:text-white transition-colors">Stories &amp; Reviews</Link>
               </li>
               <li>
-                <Link href="/faq" className="hover:text-white transition-colors">FAQs & Pricing</Link>
+                <Link href="/faq" className="hover:text-white transition-colors">FAQs &amp; Pricing</Link>
               </li>
               <li>
-                <Link href="/contact" className="hover:text-white transition-colors">Location & Contact</Link>
+                <Link href="/contact" className="hover:text-white transition-colors">Location &amp; Contact</Link>
               </li>
             </ul>
           </div>
@@ -61,7 +61,7 @@ export const Footer: React.FC = () => {
             <ul className="space-y-2.5 text-sm text-[#E7E2D8]/80">
               <li>
                 <Link href="/services/preventive-hygiene" className="hover:text-white transition-colors">
-                  Exams & Wellness Cleanings
+                  Exams &amp; Wellness Cleanings
                 </Link>
               </li>
               <li>
@@ -100,7 +100,7 @@ export const Footer: React.FC = () => {
           {/* Column 4: Contact & Hours */}
           <div className="space-y-4">
             <h3 className="font-serif text-lg font-semibold text-white mb-4">
-              Contact & Hours
+              Contact &amp; Hours
             </h3>
             <div className="space-y-3 text-sm text-[#E7E2D8]/80">
               <div className="flex items-start space-x-2.5">
@@ -130,13 +130,22 @@ export const Footer: React.FC = () => {
           </div>
         </div>
 
-        {/* Bottom Legal Strip */}
-        <div className="pt-8 border-t border-[#082824] flex flex-col md:flex-row items-center justify-between text-xs text-[#E7E2D8]/60 space-y-4 md:space-y-0">
-          <p>© {new Date().getFullYear()} Aura Dental Studio. Fictional Demo Portfolio Website.</p>
-          <div className="flex items-center space-x-6">
-            <span className="hover:underline cursor-pointer">Privacy Policy</span>
-            <span className="hover:underline cursor-pointer">Terms of Service</span>
-            <span className="hover:underline cursor-pointer">Accessibility Statement</span>
+        {/* Bottom Legal & Attribution Strip */}
+        <div className="pt-8 border-t border-[#082824] flex flex-col md:flex-row items-center justify-between text-xs text-[#E7E2D8]/70 gap-4 text-center md:text-left">
+          <div className="space-y-1">
+            <p>© {new Date().getFullYear()} Aura Dental Studio. Fictional Portfolio Demonstration Project.</p>
+            <p className="text-[11px] text-[#D4A373]/90">Concept &amp; Digital Experience by Hari Om</p>
+          </div>
+
+          <div className="flex items-center space-x-6 text-xs">
+            <a
+              href="https://github.com/hariom-wdsadhunik/dentist-portfolio-website"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#E7E2D8] hover:text-[#D4A373] transition-colors underline underline-offset-4 decoration-[#D4A373]/50 font-medium"
+            >
+              View Project Source Code
+            </a>
           </div>
         </div>
       </div>
