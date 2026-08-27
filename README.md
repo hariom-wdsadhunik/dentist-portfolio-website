@@ -2,7 +2,7 @@
 
 A premium sample portfolio website for a fictional dental clinic ("Aura Dental Studio"). This project serves as a showcase portfolio/demo application demonstrating modern frontend architecture, accessibility, clean design system integration, and responsive UX.
 
-> **Current Phase**: `PHASE 6.5 — HOMEPAGE QA & REFINEMENT`
+> **Current Phase**: `PHASE 7 — INTERNAL PAGE ARCHITECTURE`
 
 ---
 
@@ -24,7 +24,9 @@ The primary objective of this repository is to build a modern, high-performance 
 
 ## Documentation Index
 
-- [`docs/HOMEPAGE_QA.md`](docs/HOMEPAGE_QA.md) — Visual QA & refinement audit documenting issue resolutions, customized amenity SVG icons, portfolio demo content disclosures, static SVG map graphic, responsive findings, accessibility verification, and placeholder asset inventory.
+- [`docs/INTERNAL_PAGES_ARCHITECTURE.md`](docs/INTERNAL_PAGES_ARCHITECTURE.md) — Comprehensive architecture specification for internal routes (`/about`, `/services`, `/services/[slug]`, `/experience`, `/testimonials`, `/faq`, `/contact`), page taxonomy matrix (Types A-F), shared template shell strategy, routing hierarchy, CTA matrix, content data architecture, SEO schema, and content safety rules.
+- [`docs/SHARED_PAGE_PATTERNS.md`](docs/SHARED_PAGE_PATTERNS.md) — Pattern inventory specifying 10 reusable UI patterns (`PageHeader`, `Breadcrumbs`, `EditorialSplit`, `CardGrid`, `FaqAccordion`, `ProcessSteps`, `TestimonialQuote`, `CtaBanner`, `MetadataRow`, `RelatedServices`) detailing purpose, structure, data inputs, states, accessibility, responsive rules, and target pages.
+- [`docs/HOMEPAGE_QA.md`](docs/HOMEPAGE_QA.md) — Visual QA & refinement audit documenting issue resolutions, amenity SVG icons, portfolio demo content disclosures, static SVG map graphic, responsive findings, accessibility verification, and placeholder asset inventory.
 - [`docs/HOMEPAGE_IMPLEMENTATION.md`](docs/HOMEPAGE_IMPLEMENTATION.md) — Implemented homepage documentation detailing 9 section components (`HeroSection`, `TrustSection`, `ServicesSection`, `DentistSection`, `ExperienceSection`, `FirstVisitSection`, `TestimonialsSection`, `LocationSection`, `FinalCtaSection`), structured datasets, responsive decisions, accessibility, performance, and asset replacement points.
 - [`docs/FRONTEND_FOUNDATION.md`](docs/FRONTEND_FOUNDATION.md) — Implemented frontend foundation detailing typography font loading, design token architecture, layout primitives (`Container`, `Section`, `Divider`), WCAG 2.2 AA accessibility rules (`SkipToContent`, focus rings), global shell (`Header`, `MobileDrawer`, `Footer`, `MobileActionBar`), button primitives, inline SVG icon strategy, and performance decisions.
 - [`docs/HOMEPAGE_SPECIFICATION.md`](docs/HOMEPAGE_SPECIFICATION.md) — Implementation-ready homepage specification detailing section inventory, hero strategy, header/footer, trust bar, services grid, dentist spotlight, patient experience features, first visit walkthrough, testimonials, location/parking guide, final CTA, responsive rules, accessibility, imagery matrix, component inventory, data models, and text wireframe.
@@ -39,7 +41,7 @@ The primary objective of this repository is to build a modern, high-performance 
 
 ```text
 dentist-portfolio-website/
-├── docs/                        # Specifications, QA audits, foundation docs & implementation records
+├── docs/                        # Specifications, architecture blueprints, pattern inventories & implementation records
 │   ├── DESIGN_SYSTEM.md
 │   ├── ENGINEERING_CONVENTIONS.md
 │   ├── FRONTEND_FOUNDATION.md
@@ -47,7 +49,9 @@ dentist-portfolio-website/
 │   ├── HOMEPAGE_QA.md
 │   ├── HOMEPAGE_SPECIFICATION.md
 │   ├── INFORMATION_ARCHITECTURE.md
-│   └── PRODUCT_BRIEF.md
+│   ├── INTERNAL_PAGES_ARCHITECTURE.md
+│   ├── PRODUCT_BRIEF.md
+│   └── SHARED_PAGE_PATTERNS.md
 ├── public/                      # Static assets
 │   ├── icons/                   # SVG icons & symbols
 │   └── images/                  # High-resolution media assets
