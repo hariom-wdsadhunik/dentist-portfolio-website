@@ -1,36 +1,43 @@
 import React from "react";
-import Container from "@/components/ui/Container";
-import Section from "@/components/ui/Section";
-import Button from "@/components/ui/Button";
+import HeroSection from "@/sections/home/HeroSection";
+import TrustSection from "@/sections/home/TrustSection";
+import ServicesSection from "@/sections/home/ServicesSection";
+import DentistSection from "@/sections/home/DentistSection";
+import ExperienceSection from "@/sections/home/ExperienceSection";
+import FirstVisitSection from "@/sections/home/FirstVisitSection";
+import TestimonialsSection from "@/sections/home/TestimonialsSection";
+import LocationSection from "@/sections/home/LocationSection";
+import FinalCtaSection from "@/sections/home/FinalCtaSection";
 
 export default function Home() {
   return (
-    <div className="flex-1 flex flex-col justify-center">
-      <Section bg="canvas" className="py-16 md:py-24">
-        <Container className="text-center space-y-6 max-w-3xl">
-          <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-[#F4F0E8] border border-[#E7E2D8] text-xs font-semibold text-[#0D3B36] uppercase tracking-wider">
-            <span>Phase 5 — Frontend Foundation & Global Shell</span>
-          </div>
+    <div className="flex-1 flex flex-col">
+      {/* 1. Hero Section */}
+      <HeroSection />
 
-          <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-[#1C1917] leading-tight">
-            Aura Dental Studio
-          </h1>
+      {/* 2. Immediate Trust Bar */}
+      <TrustSection />
 
-          <p className="text-base sm:text-lg text-[#44403C] leading-relaxed max-w-2xl mx-auto">
-            The frontend foundation and global application shell have been established.
-            Typography (<em>Cormorant Garamond</em> &amp; <em>Plus Jakarta Sans</em>), design tokens, responsive layout grid, site header, mobile navigation drawer, global footer, and mobile action bar are active.
-          </p>
+      {/* 3. Core Services Showcase */}
+      <ServicesSection />
 
-          <div className="pt-4 flex flex-wrap items-center justify-center gap-4">
-            <Button href="/book" variant="primary" size="lg">
-              Test Booking Action
-            </Button>
-            <Button href="/services" variant="outline" size="lg">
-              Explore Services Catalog
-            </Button>
-          </div>
-        </Container>
-      </Section>
+      {/* 4. Dentist & Philosophy Spotlight */}
+      <DentistSection />
+
+      {/* 5. Patient Experience & Comfort Feature */}
+      <ExperienceSection />
+
+      {/* 6. "Your First Visit" 3-Step Walkthrough */}
+      <FirstVisitSection />
+
+      {/* 7. Patient Stories & Testimonials Carousel */}
+      <TestimonialsSection />
+
+      {/* 8. Location, Hours & Parking Guide */}
+      <LocationSection />
+
+      {/* 9. Final Conversion Banner */}
+      <FinalCtaSection />
     </div>
   );
 }
