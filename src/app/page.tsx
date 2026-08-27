@@ -1,17 +1,36 @@
+import React from "react";
+import Container from "@/components/ui/Container";
+import Section from "@/components/ui/Section";
+import Button from "@/components/ui/Button";
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-8 text-center bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-slate-100">
-      <div className="max-w-2xl space-y-4">
-        <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">
-          Dentist Portfolio Website
-        </h1>
-        <p className="text-lg text-slate-600 dark:text-slate-400">
-          Sample portfolio demo application for a fictional dental clinic.
-        </p>
-        <div className="inline-block rounded-full bg-blue-100 px-4 py-1.5 text-sm font-semibold text-blue-800 dark:bg-blue-950 dark:text-blue-200">
-          Phase 0 — Project Initialization Baseline
-        </div>
-      </div>
-    </main>
+    <div className="flex-1 flex flex-col justify-center">
+      <Section bg="canvas" className="py-16 md:py-24">
+        <Container className="text-center space-y-6 max-w-3xl">
+          <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-[#F4F0E8] border border-[#E7E2D8] text-xs font-semibold text-[#0D3B36] uppercase tracking-wider">
+            <span>Phase 5 — Frontend Foundation & Global Shell</span>
+          </div>
+
+          <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-[#1C1917] leading-tight">
+            Aura Dental Studio
+          </h1>
+
+          <p className="text-base sm:text-lg text-[#44403C] leading-relaxed max-w-2xl mx-auto">
+            The frontend foundation and global application shell have been established.
+            Typography (<em>Cormorant Garamond</em> &amp; <em>Plus Jakarta Sans</em>), design tokens, responsive layout grid, site header, mobile navigation drawer, global footer, and mobile action bar are active.
+          </p>
+
+          <div className="pt-4 flex flex-wrap items-center justify-center gap-4">
+            <Button href="/book" variant="primary" size="lg">
+              Test Booking Action
+            </Button>
+            <Button href="/services" variant="outline" size="lg">
+              Explore Services Catalog
+            </Button>
+          </div>
+        </Container>
+      </Section>
+    </div>
   );
 }

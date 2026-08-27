@@ -2,7 +2,7 @@
 
 A premium sample portfolio website for a fictional dental clinic ("Aura Dental Studio"). This project serves as a showcase portfolio/demo application demonstrating modern frontend architecture, accessibility, clean design system integration, and responsive UX.
 
-> **Current Phase**: `PHASE 4 — HOMEPAGE UX/UI SPECIFICATION`
+> **Current Phase**: `PHASE 5 — FRONTEND FOUNDATION`
 
 ---
 
@@ -24,7 +24,8 @@ The primary objective of this repository is to build a modern, high-performance 
 
 ## Documentation Index
 
-- [`docs/HOMEPAGE_SPECIFICATION.md`](docs/HOMEPAGE_SPECIFICATION.md) — Implementation-ready homepage specification detailing section inventory, hero strategy, header/footer, trust bar, services grid, dentist spotlight, patient experience features, first visit walkthrough, testimonials, location/parking guide, final CTA, responsive rules, accessibility (WCAG 2.2 AA), imagery matrix, component inventory, data models, SEO schema, and ASCII wireframe.
+- [`docs/FRONTEND_FOUNDATION.md`](docs/FRONTEND_FOUNDATION.md) — Implemented frontend foundation detailing typography font loading, design token architecture, layout primitives (`Container`, `Section`, `Divider`), WCAG 2.2 AA accessibility rules (`SkipToContent`, focus rings), global shell (`Header`, `MobileDrawer`, `Footer`, `MobileActionBar`), button primitives, inline SVG icon strategy, and performance decisions.
+- [`docs/HOMEPAGE_SPECIFICATION.md`](docs/HOMEPAGE_SPECIFICATION.md) — Implementation-ready homepage specification detailing section inventory, hero strategy, header/footer, trust bar, services grid, dentist spotlight, patient experience features, first visit walkthrough, testimonials, location/parking guide, final CTA, responsive rules, accessibility, imagery matrix, component inventory, data models, and text wireframe.
 - [`docs/DESIGN_SYSTEM.md`](docs/DESIGN_SYSTEM.md) — Creative direction (Editorial Luxury + Calm Clinical Minimalism + Modern Human Warmth), brand personality, color system, typography pairing, 8pt spacing scale, component design language, imagery art direction, design tokens, and design anti-patterns.
 - [`docs/INFORMATION_ARCHITECTURE.md`](docs/INFORMATION_ARCHITECTURE.md) — Comprehensive sitemap, routing map, navigation architecture, page content hierarchies, detailed user flows, CTA matrix, booking flow blueprint, mobile UX, accessibility specs, and SEO IA.
 - [`docs/PRODUCT_BRIEF.md`](docs/PRODUCT_BRIEF.md) — Product brief, clinic profile, target audience analysis, business goals, service catalog, trust framework, and functional/non-functional requirements.
@@ -36,9 +37,10 @@ The primary objective of this repository is to build a modern, high-performance 
 
 ```text
 dentist-portfolio-website/
-├── docs/                        # Specifications, architecture blueprints & design systems
+├── docs/                        # Specifications, architecture blueprints & foundation docs
 │   ├── DESIGN_SYSTEM.md
 │   ├── ENGINEERING_CONVENTIONS.md
+│   ├── FRONTEND_FOUNDATION.md
 │   ├── HOMEPAGE_SPECIFICATION.md
 │   ├── INFORMATION_ARCHITECTURE.md
 │   └── PRODUCT_BRIEF.md
@@ -47,7 +49,9 @@ dentist-portfolio-website/
 │   └── images/                  # High-resolution media assets
 ├── src/
 │   ├── app/                     # Next.js App Router (pages & layouts)
-│   ├── components/              # Shared reusable UI components
+│   ├── components/              # Shared UI primitives & global shell
+│   │   ├── global/              # Header, Footer, MobileDrawer, MobileActionBar
+│   │   └── ui/                  # Button, Container, Section, Divider, Icons
 │   ├── hooks/                   # Custom React hooks
 │   ├── lib/                     # Utilities & helper functions
 │   ├── sections/                # Page-specific feature sections

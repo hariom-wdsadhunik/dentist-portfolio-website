@@ -1,20 +1,51 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import type { Metadata, Viewport } from "next";
+import { Cormorant_Garamond, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/global/Header";
+import Footer from "@/components/global/Footer";
+import MobileActionBar from "@/components/global/MobileActionBar";
+import SkipToContent from "@/components/ui/SkipToContent";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const cormorantGaramond = Cormorant_Garamond({
+  variable: "--font-cormorant",
   subsets: ["latin"],
+  weight: ["500", "600", "700"],
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const plusJakartaSans = Plus_Jakarta_Sans({
+  variable: "--font-plus-jakarta",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Dentist Portfolio Website | Premium Dental Clinic",
-  description: "A modern, accessible portfolio demonstration for a fictional premium dental clinic.",
+  title: "Aura Dental Studio | Modern Gentle Dentistry in Downtown Austin",
+  description:
+    "Experience stress-free oral care with transparent pricing, 3D digital precision, and soothing comfort amenities at Aura Dental Studio in Downtown Austin, TX.",
+  keywords: [
+    "Dentist Austin",
+    "Downtown Austin Dentist",
+    "Gentle Dentistry",
+    "Clear Aligners Austin",
+    "Same Day Crowns",
+  ],
+  authors: [{ name: "Aura Dental Studio Team" }],
+  openGraph: {
+    title: "Aura Dental Studio | Modern Gentle Dentistry",
+    description:
+      "A modern, patient-centric boutique dental studio providing gentle preventive care, precision cosmetic enhancements, and stress-free restorative dentistry in Downtown Austin.",
+    siteName: "Aura Dental Studio",
+    locale: "en_US",
+    type: "website",
+  },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#0D3B36",
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({
@@ -25,9 +56,17 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${cormorantGaramond.variable} ${plusJakartaSans.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col bg-[#FBF9F5] text-[#1C1917] font-sans">
+        <SkipToContent />
+        <Header />
+        <main id="main-content" className="flex-1 flex flex-col">
+          {children}
+        </main>
+        <Footer />
+        <MobileActionBar />
+      </body>
     </html>
   );
 }
