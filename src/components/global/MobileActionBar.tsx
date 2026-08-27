@@ -1,8 +1,18 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { PhoneIcon, CalendarIcon } from "@/components/ui/Icons";
 
 export const MobileActionBar: React.FC = () => {
+  const pathname = usePathname();
+
+  // Hide mobile action bar on /book page to avoid obscuring form action buttons
+  if (pathname === "/book") {
+    return null;
+  }
+
   return (
     <aside
       aria-label="Mobile quick actions"

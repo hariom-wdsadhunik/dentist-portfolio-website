@@ -2,7 +2,7 @@
 
 A premium sample portfolio website for a fictional dental clinic ("Aura Dental Studio"). This project serves as a showcase portfolio/demo application demonstrating modern frontend architecture, accessibility, clean design system integration, and responsive UX.
 
-> **Current Phase**: `PHASE 10 — SUPPORT & CONTACT PAGES`
+> **Current Phase**: `PHASE 11 — BOOKING EXPERIENCE`
 
 ---
 
@@ -24,6 +24,7 @@ The primary objective of this repository is to build a modern, high-performance 
 
 ## Documentation Index
 
+- [`docs/BOOKING_IMPLEMENTATION.md`](docs/BOOKING_IMPLEMENTATION.md) — Implementation record for the interactive 3-step appointment-booking demonstration (`/book`), state model (`BookingFlow`), step components (`BookingProgress`, `BookingServiceStep`, `BookingDateTimeStep`, `BookingDetailsStep`, `BookingSummary`, `BookingConfirmation`, `BookingError`), demo safety disclosures, and mobile action bar safe-area behavior.
 - [`docs/SUPPORT_PAGES_IMPLEMENTATION.md`](docs/SUPPORT_PAGES_IMPLEMENTATION.md) — Implementation record for support & conversion routes (`/testimonials`, `/faq`, `/contact`), data models (`testimonialData.ts`, `faqData.ts`), client-side `ContactForm` validation, demo safety disclaimers, accessibility, and SEO metadata.
 - [`docs/SERVICE_DETAIL_IMPLEMENTATION.md`](docs/SERVICE_DETAIL_IMPLEMENTATION.md) — Implementation record for the dynamic service detail system (`/services/[slug]`), static route pre-rendering (`generateStaticParams`), service data model, shared UI patterns (`FaqAccordion`, `MetadataRow`), SEO metadata, accessibility, and content claim safety.
 - [`docs/CORE_INTERNAL_PAGES_IMPLEMENTATION.md`](docs/CORE_INTERNAL_PAGES_IMPLEMENTATION.md) — Implementation record for the core internal marketing routes (`/about`, `/services`, `/experience`), reusable shared pattern primitives (`PageHeader`, `Breadcrumbs`, `EditorialSplit`, `CardGrid`, `ProcessSteps`, `CtaBanner`, `RelatedServices`), structured datasets (`servicesData.ts`, `teamData.ts`), responsive/accessibility verification, and SEO metadata.
@@ -45,6 +46,7 @@ The primary objective of this repository is to build a modern, high-performance 
 ```text
 dentist-portfolio-website/
 ├── docs/                        # Specifications, architecture blueprints, pattern inventories & implementation records
+│   ├── BOOKING_IMPLEMENTATION.md
 │   ├── CORE_INTERNAL_PAGES_IMPLEMENTATION.md
 │   ├── DESIGN_SYSTEM.md
 │   ├── ENGINEERING_CONVENTIONS.md
@@ -64,6 +66,7 @@ dentist-portfolio-website/
 ├── src/
 │   ├── app/                     # Next.js App Router (pages & layouts)
 │   │   ├── about/               # About page route
+│   │   ├── book/                # Interactive Booking Demonstration route
 │   │   ├── contact/             # Contact & Location route
 │   │   ├── experience/          # Experience page route
 │   │   ├── faq/                 # FAQs & Financials route
@@ -73,7 +76,8 @@ dentist-portfolio-website/
 │   │   ├── globals.css
 │   │   ├── layout.tsx
 │   │   └── page.tsx             # Homepage route
-│   ├── components/              # Shared UI primitives, global shell & page patterns
+│   ├── components/              # Shared UI primitives, global shell, page patterns & booking components
+│   │   ├── booking/             # BookingFlow, BookingProgress, BookingServiceStep, BookingDateTimeStep, BookingDetailsStep, BookingSummary, BookingConfirmation, BookingError
 │   │   ├── global/              # Header, Footer, MobileDrawer, MobileActionBar
 │   │   ├── shared/              # PageHeader, Breadcrumbs, EditorialSplit, CardGrid, ProcessSteps, FaqAccordion, MetadataRow, ContactForm, CtaBanner, RelatedServices
 │   │   └── ui/                  # Button, Container, Section, Divider, Icons
