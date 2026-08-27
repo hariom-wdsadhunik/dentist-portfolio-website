@@ -2,7 +2,7 @@
 
 A premium sample portfolio website for a fictional dental clinic ("Aura Dental Studio"). This project serves as a showcase portfolio/demo application demonstrating modern frontend architecture, accessibility, clean design system integration, and responsive UX.
 
-> **Current Phase**: `PHASE 1 — PRODUCT DEFINITION`
+> **Current Phase**: `PHASE 2 — INFORMATION ARCHITECTURE & UX`
 
 ---
 
@@ -22,9 +22,10 @@ The primary objective of this repository is to build a modern, high-performance 
 
 ---
 
-## Documentation
+## Documentation Index
 
-- [`docs/PRODUCT_BRIEF.md`](docs/PRODUCT_BRIEF.md) — Product brief, clinic profile, target audience, business goals, service catalog, trust framework, and functional/non-functional requirements.
+- [`docs/INFORMATION_ARCHITECTURE.md`](docs/INFORMATION_ARCHITECTURE.md) — Comprehensive sitemap, routing map, navigation architecture, page content hierarchies, detailed user flows, CTA matrix, booking flow blueprint, mobile UX, accessibility specs, and SEO IA.
+- [`docs/PRODUCT_BRIEF.md`](docs/PRODUCT_BRIEF.md) — Product brief, clinic profile, target audience analysis, business goals, service catalog, trust framework, and functional/non-functional requirements.
 - [`docs/ENGINEERING_CONVENTIONS.md`](docs/ENGINEERING_CONVENTIONS.md) — Engineering rules, accessibility standards, responsive guidelines, and code quality conventions.
 
 ---
@@ -33,8 +34,9 @@ The primary objective of this repository is to build a modern, high-performance 
 
 ```text
 dentist-portfolio-website/
-├── docs/                        # Project specification & engineering guidelines
+├── docs/                        # Project specifications & architecture blueprints
 │   ├── ENGINEERING_CONVENTIONS.md
+│   ├── INFORMATION_ARCHITECTURE.md
 │   └── PRODUCT_BRIEF.md
 ├── public/                      # Static assets
 │   ├── icons/                   # SVG icons & symbols
