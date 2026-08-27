@@ -92,7 +92,7 @@ export const BookingDetailsStep: React.FC<BookingDetailsStepProps> = ({
             className={`w-full px-4 py-2.5 rounded-lg border bg-white text-sm text-[#1C1917] focus-visible:outline-2 focus-visible:outline-[#0D3B36] ${
               errors.fullName ? "border-red-500" : "border-[#E7E2D8]"
             }`}
-            placeholder="e.g. Sarah Jenkins"
+            placeholder="e.g. Pooja Sharma"
           />
           {errors.fullName && (
             <p id="fullName-error" className="text-xs text-red-600 font-medium">
@@ -117,7 +117,7 @@ export const BookingDetailsStep: React.FC<BookingDetailsStepProps> = ({
             className={`w-full px-4 py-2.5 rounded-lg border bg-white text-sm text-[#1C1917] focus-visible:outline-2 focus-visible:outline-[#0D3B36] ${
               errors.email ? "border-red-500" : "border-[#E7E2D8]"
             }`}
-            placeholder="sarah@example.com"
+            placeholder="pooja@example.com"
           />
           {errors.email && (
             <p id="email-error" className="text-xs text-red-600 font-medium">
@@ -144,7 +144,7 @@ export const BookingDetailsStep: React.FC<BookingDetailsStepProps> = ({
             className={`w-full px-4 py-2.5 rounded-lg border bg-white text-sm text-[#1C1917] focus-visible:outline-2 focus-visible:outline-[#0D3B36] ${
               errors.phone ? "border-red-500" : "border-[#E7E2D8]"
             }`}
-            placeholder="(512) 555-0199"
+            placeholder="+91 98765 43210"
           />
           {errors.phone && (
             <p id="phone-error" className="text-xs text-red-600 font-medium">

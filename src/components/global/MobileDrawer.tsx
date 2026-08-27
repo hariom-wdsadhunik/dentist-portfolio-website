@@ -107,16 +107,16 @@ export const MobileDrawer: React.FC<MobileDrawerProps> = ({ isOpen, onClose }) =
           <div className="space-y-2 text-xs text-[#44403C]">
             <div className="flex items-center space-x-2">
               <MapPinIcon className="w-4 h-4 text-[#0D3B36]" />
-              <span>410 Congress Ave, Suite 200, Austin, TX</span>
+              <span>204, Sea View House, Bandra West, Mumbai</span>
             </div>
             <div className="flex items-center space-x-2">
               <ClockIcon className="w-4 h-4 text-[#0D3B36]" />
-              <span>Mon-Fri: 7:00 AM - 6:00 PM</span>
+              <span>Mon-Sat: 9:00 AM - 7:00 PM</span>
             </div>
             <div className="flex items-center space-x-2">
               <PhoneIcon className="w-4 h-4 text-[#0D3B36]" />
-              <a href="tel:5125550199" className="hover:underline font-medium">
-                (512) 555-0199
+              <a href="tel:+919876543210" className="hover:underline font-medium">
+                +91 98765 43210
               </a>
             </div>
           </div>

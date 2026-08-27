@@ -91,7 +91,7 @@ export const BookingConfirmation: React.FC<BookingConfirmationProps> = ({
         </div>
 
         <div className="pt-3 border-t border-[#E7E2D8] text-[11px] text-[#78716C]">
-          📍 <strong>Studio Address:</strong> 410 Congress Ave, Suite 200, Downtown Austin, TX 78701
+          📍 <strong>Studio Address:</strong> 204, Sea View House, Linking Road, Bandra West, Mumbai 400050
         </div>
       </div>
 

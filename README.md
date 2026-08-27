@@ -1,14 +1,14 @@
-# Aura Dental Studio
+# Aura Dental Studio (Mumbai, India)
 
-A premium, high-performance sample portfolio website for a fictional boutique dental practice in Downtown Austin, TX ("Aura Dental Studio"). Built as a showcase application demonstrating modern frontend architecture, WCAG 2.2 AA accessibility, clean design system integration, and responsive UX with Next.js 16 (App Router), TypeScript, and Tailwind CSS.
+A premium, high-performance sample portfolio website for a fictional boutique dental practice in Bandra West, Mumbai, Maharashtra, India ("Aura Dental Studio"). Built as a showcase application demonstrating modern frontend architecture, WCAG 2.2 AA accessibility, clean design system integration, and responsive UX with Next.js 16 (App Router), TypeScript, and Tailwind CSS.
 
-> **Project Status**: `PROJECT COMPLETE — PORTFOLIO READY`
+> **Project Status**: `PROJECT COMPLETE — PORTFOLIO READY (MUMBAI LOCALIZED)`
 
 ---
 
 ## Executive Overview
 
-Aura Dental Studio presents a complete digital presence for a modern dental studio. The project balances three visual and experience pillars:
+Aura Dental Studio presents a complete digital presence for a modern dental studio in Bandra West, Mumbai. The project balances three visual and experience pillars:
 1. **Editorial Luxury**: Crisp architectural compositions, restrained gold accents, elegant typography.
 2. **Calm Clinical Minimalism**: Warm alabaster canvas, soft natural daylighting, zero clinical clutter.
 3. **Modern Human Warmth**: Empathetic practitioner portrayal, relaxed atmosphere, collaborative co-care focus.
@@ -29,7 +29,7 @@ Aura Dental Studio presents a complete digital presence for a modern dental stud
 ## Key Features & User Journeys
 
 - **9-Section Marketing Homepage**: Hero, trust bar, services catalog grid, dentist spotlight, patient experience features, first visit walkthrough, patient stories, location/parking guide, and final CTA banner.
-- **Dynamic Service Detail System (`/services/[slug]`)**: Pre-renders 7 treatment detail routes statically (`preventive-hygiene`, `clear-aligners`, `teeth-whitening`, `porcelain-veneers`, `same-day-crowns`, `dental-implants`, `emergency-care`) with customized FAQs, pricing guidance, and treatment steps.
+- **Dynamic Service Detail System (`/services/[slug]`)**: Pre-renders 7 treatment detail routes statically (`preventive-hygiene`, `clear-aligners`, `teeth-whitening`, `porcelain-veneers`, `same-day-crowns`, `dental-implants`, `emergency-care`) with customized FAQs, pricing guidance in INR (₹), and treatment steps.
 - **Interactive Booking Demonstration (`/book`)**: 3-step in-memory appointment booking flow (`Service Selection` → `Date & Time` → `Patient Details` → `Confirmation`) featuring live summary review and automated mobile action bar hiding.
 - **Accessible Support Routes**: Informational pages for `/about`, `/services`, `/experience`, `/testimonials`, `/faq`, and `/contact` with interactive client-validated forms.
 - **Production SEO & Infrastructure**: Root application metadata, Open Graph social cards (`og-image.svg`), browser favicon (`icon.svg`), `robots.txt`, and automated XML sitemap generator (`sitemap.ts`).
@@ -44,7 +44,7 @@ All 18 static routes pre-render cleanly at build time:
 - `/_not-found` — Custom 404 Error Boundary Page
 - `/about` — Practice Philosophy & Team Profiles
 - `/services` — Full Treatments Catalog
-- `/services/preventive-hygiene` — 3D Preventive Care & Wellness Cleanings
+- `/services/preventive-hygiene` — 3D Preventive Hygiene & Wellness Cleanings
 - `/services/clear-aligners` — Clear Aligner Orthodontics
 - `/services/teeth-whitening` — Professional In-Studio Whitening
 - `/services/porcelain-veneers` — Custom Porcelain Veneers
@@ -53,7 +53,7 @@ All 18 static routes pre-render cleanly at build time:
 - `/services/emergency-care` — Same-Day Emergency Triage
 - `/experience` — Patient Comfort Care & 3D Scanning Tech
 - `/testimonials` — Patient Stories & Demo Reviews
-- `/faq` — Categorized FAQs & PPO Financial Standards
+- `/faq` — Categorized FAQs & Financial Standards
 - `/contact` — Studio Location, Parking Guide & `ContactForm`
 - `/book` — Interactive 3-Step Appointment Booking Demo
 - `/robots.txt` — Crawler Rules
@@ -63,6 +63,7 @@ All 18 static routes pre-render cleanly at build time:
 
 ## Documentation Index
 
+- [`docs/MUMBAI_LOCALIZATION.md`](docs/MUMBAI_LOCALIZATION.md) — Comprehensive record of the localization process from Austin, Texas to Bandra West, Mumbai, Maharashtra, India.
 - [`docs/PRODUCTION_READINESS.md`](docs/PRODUCTION_READINESS.md) — Production deployment record, pre-rendering matrix, security audit, WCAG 2.2 AA accessibility, and deployment instructions.
 - [`docs/VISUAL_POLISH_REPORT.md`](docs/VISUAL_POLISH_REPORT.md) — Final visual polish assessment record detailing the visual QA scorecard (9.8/10 average), typography refinements, section rhythm, CTA prominence, and mobile ergonomics.
 - [`docs/FULL_SITE_QA.md`](docs/FULL_SITE_QA.md) — Full-site quality assurance, accessibility (WCAG 2.2 AA), responsive grid, heading hierarchy, contrast, content claim neutralization, SEO metadata, and JSON-LD record.
@@ -100,6 +101,7 @@ dentist-portfolio-website/
 │   ├── HOMEPAGE_SPECIFICATION.md
 │   ├── INFORMATION_ARCHITECTURE.md
 │   ├── INTERNAL_PAGES_ARCHITECTURE.md
+│   ├── MUMBAI_LOCALIZATION.md
 │   ├── PRODUCT_BRIEF.md
 │   ├── PRODUCTION_READINESS.md
 │   ├── SERVICE_DETAIL_IMPLEMENTATION.md
@@ -192,4 +194,4 @@ dentist-portfolio-website/
 
 ## Fictional Showcase Disclosure
 
-**Aura Dental Studio is a sample portfolio demonstration project.** All practice details, practitioner bios, patient reviews, pricing estimates, appointment availability, and contact interactions are illustrative concepts designed to showcase modern web application design and engineering. No real medical services are rendered, and no personal data is transmitted to an external server.
+**Aura Dental Studio is a sample portfolio demonstration project.** All practice details, practitioner bios, patient reviews, pricing estimates, appointment availability, and contact interactions are illustrative concepts designed to showcase modern web application design and engineering for a fictional practice in Bandra West, Mumbai, India. Concept & Digital Experience by Hari Om. No real medical services are rendered, and no personal data is transmitted to an external server.

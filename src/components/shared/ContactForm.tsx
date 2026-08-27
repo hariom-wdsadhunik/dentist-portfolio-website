@@ -115,7 +115,7 @@ export const ContactForm: React.FC = () => {
           Contact Office Concierge
         </h3>
         <p className="text-xs text-[#78716C]">
-          Have a question about services, PPO insurance, or scheduling? Send a message to our team.
+          Have a question about services, payment options, or scheduling? Send a message to our team.
         </p>
       </div>
 
@@ -136,7 +136,7 @@ export const ContactForm: React.FC = () => {
             className={`w-full px-4 py-2.5 rounded-lg border bg-white text-sm text-[#1C1917] focus-visible:outline-2 focus-visible:outline-[#0D3B36] transition-colors ${
               errors.fullName ? "border-red-500" : "border-[#E7E2D8]"
             }`}
-            placeholder="e.g. Dr. Alex Morgan"
+            placeholder="e.g. Rahul Sharma"
           />
           {errors.fullName && (
             <p id="fullName-error" className="text-xs text-red-600 font-medium">
@@ -161,7 +161,7 @@ export const ContactForm: React.FC = () => {
             className={`w-full px-4 py-2.5 rounded-lg border bg-white text-sm text-[#1C1917] focus-visible:outline-2 focus-visible:outline-[#0D3B36] transition-colors ${
               errors.email ? "border-red-500" : "border-[#E7E2D8]"
             }`}
-            placeholder="alex@example.com"
+            placeholder="rahul@example.com"
           />
           {errors.email && (
             <p id="email-error" className="text-xs text-red-600 font-medium">
@@ -188,7 +188,7 @@ export const ContactForm: React.FC = () => {
             className={`w-full px-4 py-2.5 rounded-lg border bg-white text-sm text-[#1C1917] focus-visible:outline-2 focus-visible:outline-[#0D3B36] transition-colors ${
               errors.phone ? "border-red-500" : "border-[#E7E2D8]"
             }`}
-            placeholder="(512) 555-0199"
+            placeholder="+91 98765 43210"
           />
           {errors.phone && (
             <p id="phone-error" className="text-xs text-red-600 font-medium">
@@ -234,7 +234,7 @@ export const ContactForm: React.FC = () => {
           <option value="same-day-crowns">Same-Day CEREC Crowns</option>
           <option value="teeth-whitening">Professional Teeth Whitening</option>
           <option value="porcelain-veneers">Handcrafted Veneers</option>
-          <option value="ppo-insurance">PPO Insurance &amp; Financials</option>
+          <option value="financial-options">Payment &amp; Insurance Options</option>
         </select>
       </div>
 

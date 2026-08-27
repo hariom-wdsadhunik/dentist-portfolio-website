@@ -16,7 +16,7 @@ export const Footer: React.FC = () => {
               </span>
             </Link>
             <p className="text-sm text-[#E7E2D8]/80 leading-relaxed">
-              Modern, gentle dentistry designed around your comfort, schedule, and confidence in Downtown Austin.
+              Modern, gentle dentistry designed around your comfort, schedule, and confidence in Bandra West, Mumbai.
             </p>
             <div className="pt-2 text-xs text-[#D4A373] bg-[#082824] p-3 rounded-md border border-[#082824]">
               <strong>Portfolio Showcase:</strong> Aura Dental Studio is a sample portfolio demonstration project created for web engineering and UX showcase purposes.
@@ -105,19 +105,19 @@ export const Footer: React.FC = () => {
             <div className="space-y-3 text-sm text-[#E7E2D8]/80">
               <div className="flex items-start space-x-2.5">
                 <MapPinIcon className="w-5 h-5 text-[#D4A373] shrink-0 mt-0.5" />
-                <span>410 Congress Ave, Suite 200, Austin, TX 78701</span>
+                <span>204, Sea View House, Linking Road, Bandra West, Mumbai 400050</span>
               </div>
               <div className="flex items-center space-x-2.5">
                 <PhoneIcon className="w-5 h-5 text-[#D4A373] shrink-0" />
-                <a href="tel:5125550199" className="hover:text-white font-medium">
-                  (512) 555-0199
+                <a href="tel:+919876543210" className="hover:text-white font-medium">
+                  +91 98765 43210
                 </a>
               </div>
               <div className="flex items-start space-x-2.5">
                 <ClockIcon className="w-5 h-5 text-[#D4A373] shrink-0 mt-0.5" />
                 <div>
-                  <p>Mon - Fri: 7:00 AM - 6:00 PM</p>
-                  <p className="text-xs text-[#E7E2D8]/60 mt-0.5">Sat: By Appointment | Sun: Closed</p>
+                  <p>Mon - Sat: 9:00 AM - 7:00 PM</p>
+                  <p className="text-xs text-[#E7E2D8]/60 mt-0.5">Sun: Closed</p>
                 </div>
               </div>
             </div>

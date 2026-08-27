@@ -16,7 +16,7 @@ export const DentistSection: React.FC = () => {
               <div className="relative aspect-[3/4] rounded-xl overflow-hidden bg-[#0D3B36]">
                 <Image
                   src="/images/dentist-portrait-visual.svg"
-                  alt="Dr. Elena Rostova, DDS, FAGD, Founder & Lead Dentist at Aura Dental Studio"
+                  alt="Dr. Elena Rostova, BDS, MDS, Founder & Lead Dentist at Aura Dental Studio"
                   fill
                   sizes="(max-width: 1024px) 100vw, 35vw"
                   className="object-cover"
@@ -41,18 +41,18 @@ export const DentistSection: React.FC = () => {
             </blockquote>
 
             <p className="text-base text-[#44403C] leading-relaxed">
-              Dr. Rostova holds a Fellowship with the Academy of General Dentistry (FAGD)—an honor earned by less than 6% of general dentists nationwide. Her practice focuses on conservative, pain-free techniques and transparent care plans.
+              Dr. Rostova holds a Master of Dental Surgery (MDS) in Prosthodontics with over 15 years of clinical leadership in Mumbai. Her practice focuses on conservative, pain-free techniques and transparent care plans.
             </p>
 
             {/* Credentials Badges */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
               <div className="flex items-center space-x-2.5 p-3 rounded-lg bg-white border border-[#E7E2D8] text-xs text-[#1C1917]">
                 <ShieldCheckIcon className="w-5 h-5 text-[#0D3B36] shrink-0" />
-                <span>Fellow, Academy of General Dentistry (FAGD)</span>
+                <span>BDS, MDS (Prosthodontics)</span>
               </div>
               <div className="flex items-center space-x-2.5 p-3 rounded-lg bg-white border border-[#E7E2D8] text-xs text-[#1C1917]">
                 <ShieldCheckIcon className="w-5 h-5 text-[#0D3B36] shrink-0" />
-                <span>DDS, UT Health Science Center</span>
+                <span>15+ Years Clinical Leadership</span>
               </div>
             </div>
 

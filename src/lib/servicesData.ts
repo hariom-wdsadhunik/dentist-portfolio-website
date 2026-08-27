@@ -50,7 +50,7 @@ export const SERVICES_CATALOG: ServiceItem[] = [
     categoryBadge: "Wellness & Oral Maintenance",
     shortDescription: "3D digital exams, ultrasonic precision cleaning, and personalized oral health wellness plans.",
     patientBenefit: "Pain-free ultrasonic plaque removal and early detection of decay before it causes discomfort.",
-    heroIntro: "Maintain a healthy, vibrant smile with gentle ultrasonic hygiene care and non-invasive 3D digital oral health evaluations.",
+    heroIntro: "Maintain a healthy, vibrant smile with gentle ultrasonic hygiene care and non-invasive 3D digital oral health evaluations in Bandra West, Mumbai.",
     patientProblem: "Plaque build-up, gum inflammation, and hidden enamel decay often develop without early symptoms.",
     overview: "Our preventive wellness appointments combine advanced 3D digital imaging with gentle ultrasonic hygiene technology. We thoroughly evaluate your teeth, gums, and bite function while keeping you completely relaxed in our soothing studio environment.",
     benefits: [
@@ -85,7 +85,7 @@ export const SERVICES_CATALOG: ServiceItem[] = [
       { label: "Appointment Duration", value: "60 minutes" },
       { label: "Anesthesia / Numbing", value: "None required for routine hygiene" },
       { label: "Recommended Frequency", value: "Every 6 months" },
-      { label: "Insurance & Pricing", value: "Covered by most PPO plans | Self-pay intro: $149" },
+      { label: "Insurance & Pricing", value: "Reimbursement support available | Self-pay intro: ₹2,500" },
     ],
     faqs: [
       {
@@ -98,12 +98,12 @@ export const SERVICES_CATALOG: ServiceItem[] = [
       },
     ],
     featured: true,
-    pricingGuidance: "Covered by most PPO insurance plans | Self-pay intro exam: $149",
+    pricingGuidance: "Reimbursement documentation provided | Intro exam & hygiene: ₹2,500",
     durationGuidance: "60 minutes",
     route: "/services/preventive-hygiene",
     relatedServices: ["teeth-whitening", "same-day-crowns"],
-    metaTitle: "Comprehensive Dental Exams & Gentle Hygiene | Aura Dental Studio Austin",
-    metaDescription: "Experience gentle ultrasonic cleaning and 3D digital dental exams in Downtown Austin. Covered by major PPO insurance. Book your visit online.",
+    metaTitle: "Comprehensive Dental Exams & Gentle Hygiene | Aura Dental Studio Mumbai",
+    metaDescription: "Experience gentle ultrasonic cleaning and 3D digital dental exams in Bandra West, Mumbai. Transparent pricing & easy online booking.",
   },
 
   // 2. Cosmetic: Clear Aligners
@@ -138,7 +138,7 @@ export const SERVICES_CATALOG: ServiceItem[] = [
       {
         number: "03",
         title: "Progress Checks & Refinement",
-        description: "You switch to a new tray set every 1-2 weeks, visiting our studio briefly every 6-8 weeks to monitor progress.",
+        description: "You switch to a new tray set every 1-2 weeks, visiting our Bandra studio briefly every 6-8 weeks to monitor progress.",
       },
     ],
     suitability: [
@@ -150,7 +150,7 @@ export const SERVICES_CATALOG: ServiceItem[] = [
       { label: "Treatment Length", value: "Typically 6 to 14 months" },
       { label: "Check-in Frequency", value: "Brief office check-in every 6–8 weeks" },
       { label: "Daily Wear Time", value: "20 to 22 hours per day" },
-      { label: "Financial Guidance", value: "Plans starting from $2,800 | Monthly financing from $99/mo" },
+      { label: "Financial Guidance", value: "Plans starting from ₹1,20,000 | Monthly installment options" },
     ],
     faqs: [
       {
@@ -163,12 +163,12 @@ export const SERVICES_CATALOG: ServiceItem[] = [
       },
     ],
     featured: true,
-    pricingGuidance: "Custom plans starting from $2,800 | Monthly financing from $99/mo",
+    pricingGuidance: "Custom plans starting from ₹1,20,000 | Installment options available",
     durationGuidance: "6 to 14 months",
     route: "/services/clear-aligners",
     relatedServices: ["teeth-whitening", "porcelain-veneers"],
-    metaTitle: "Discreet Clear Aligners in Austin | Aura Dental Studio",
-    metaDescription: "Straighten your teeth discreetly with 3D digital clear aligners in Downtown Austin. Virtual smile previews & flexible monthly financing available.",
+    metaTitle: "Discreet Clear Aligners in Mumbai | Aura Dental Studio",
+    metaDescription: "Straighten your teeth discreetly with 3D digital clear aligners in Bandra West, Mumbai. Virtual smile previews & easy installment plans.",
   },
 
   // 3. Cosmetic: Teeth Whitening
@@ -180,8 +180,8 @@ export const SERVICES_CATALOG: ServiceItem[] = [
     categoryBadge: "Stain Removal & Brightening",
     shortDescription: "Same-day studio brightening combined with custom take-home maintenance trays.",
     patientBenefit: "Enamel-safe whitening formulas paired with desensitizing treatments for zero zingers.",
-    heroIntro: "Lift stubborn stains from coffee, tea, wine, and aging up to 8 shades lighter in a single comfortable session.",
-    patientProblem: "Deep enamel staining and yellowing often resist drugstore whitening strips and toothpaste.",
+    heroIntro: "Lift stubborn stains from tea, coffee, food pigments, and aging up to 8 shades lighter in a single comfortable session.",
+    patientProblem: "Deep enamel staining and yellowing often resist drugstore whitening products and toothpaste.",
     overview: "Our studio whitening system pairs powerful professional-grade brightening gel with desensitizing agents and LED activation. In just over an hour, you achieve a noticeably brighter smile without enamel damage or sharp zingers.",
     benefits: [
       "Noticeably brighter smile achieved in a single 75-minute studio visit",
@@ -215,7 +215,7 @@ export const SERVICES_CATALOG: ServiceItem[] = [
       { label: "Appointment Duration", value: "75 minutes" },
       { label: "Results Duration", value: "12 to 24 months with touch-up maintenance" },
       { label: "Sensitivity Level", value: "Minimal to zero with our formula" },
-      { label: "Pricing Guidance", value: "In-studio session: $399 | Take-home maintenance kit: $199" },
+      { label: "Pricing Guidance", value: "In-studio session: ₹12,500 | Take-home kit: ₹5,500" },
     ],
     faqs: [
       {
@@ -224,12 +224,12 @@ export const SERVICES_CATALOG: ServiceItem[] = [
       },
     ],
     featured: false,
-    pricingGuidance: "In-studio session: $399 | Take-home kit: $199",
+    pricingGuidance: "In-studio session: ₹12,500 | Take-home kit: ₹5,500",
     durationGuidance: "75 minutes",
     route: "/services/teeth-whitening",
     relatedServices: ["clear-aligners", "porcelain-veneers"],
-    metaTitle: "Professional Studio Teeth Whitening Austin | Aura Dental Studio",
-    metaDescription: "Lift deep enamel stains up to 8 shades lighter in 75 minutes. Low-sensitivity professional teeth whitening in Downtown Austin.",
+    metaTitle: "Professional Studio Teeth Whitening Mumbai | Aura Dental Studio",
+    metaDescription: "Lift deep enamel stains up to 8 shades lighter in 75 minutes. Low-sensitivity professional teeth whitening in Bandra West, Mumbai.",
   },
 
   // 4. Cosmetic: Porcelain Veneers
@@ -276,7 +276,7 @@ export const SERVICES_CATALOG: ServiceItem[] = [
       { label: "Appointments Required", value: "2 to 3 visits" },
       { label: "Expected Longevity", value: "15+ years with proper oral hygiene" },
       { label: "Material Used", value: "High-translucency feldspathic ceramic or E-Max porcelain" },
-      { label: "Pricing Guidance", value: "Consultation required | $1,200 – $1,800 per tooth" },
+      { label: "Pricing Guidance", value: "Consultation required | ₹18,000 – ₹35,000 per tooth" },
     ],
     faqs: [
       {
@@ -285,12 +285,12 @@ export const SERVICES_CATALOG: ServiceItem[] = [
       },
     ],
     featured: true,
-    pricingGuidance: "Consultation required | $1,200 – $1,800 per tooth",
+    pricingGuidance: "Consultation required | ₹18,000 – ₹35,000 per tooth",
     durationGuidance: "2 to 3 appointments",
     route: "/services/porcelain-veneers",
     relatedServices: ["clear-aligners", "same-day-crowns"],
-    metaTitle: "Handcrafted Porcelain Veneers Austin | Aura Dental Studio",
-    metaDescription: "Transform your smile with natural-looking porcelain veneers in Downtown Austin. Customized 3D smile design & conservative enamel preservation.",
+    metaTitle: "Handcrafted Porcelain Veneers Mumbai | Aura Dental Studio",
+    metaDescription: "Transform your smile with natural-looking porcelain veneers in Bandra West, Mumbai. Customized 3D smile design & conservative enamel preservation.",
   },
 
   // 5. Restorative: Same-Day Crowns
@@ -337,7 +337,7 @@ export const SERVICES_CATALOG: ServiceItem[] = [
       { label: "Appointment Duration", value: "90 minutes (Single Visit)" },
       { label: "Material Composition", value: "100% Biocompatible Ceramic / E-Max" },
       { label: "Temporary Crown Needed", value: "No temporary crown required" },
-      { label: "Financial Guidance", value: "Starting from $1,100 | Insurance PPO co-pays apply" },
+      { label: "Financial Guidance", value: "Starting from ₹22,000 | Reimbursement documentation provided" },
     ],
     faqs: [
       {
@@ -346,12 +346,12 @@ export const SERVICES_CATALOG: ServiceItem[] = [
       },
     ],
     featured: true,
-    pricingGuidance: "Starting from $1,100 | Insurance PPO co-pays apply",
+    pricingGuidance: "Starting from ₹22,000 | Reimbursement documentation provided",
     durationGuidance: "90 minutes (single visit)",
     route: "/services/same-day-crowns",
     relatedServices: ["dental-implants", "preventive-hygiene"],
-    metaTitle: "Same-Day CEREC Digital Crowns Austin | Aura Dental Studio",
-    metaDescription: "Restore damaged teeth in a single 90-minute appointment. No temporary crowns or messy impressions. Same-day CEREC ceramic crowns in Austin.",
+    metaTitle: "Same-Day CEREC Digital Crowns Mumbai | Aura Dental Studio",
+    metaDescription: "Restore damaged teeth in a single 90-minute appointment. No temporary crowns or messy impressions. Same-day CEREC ceramic crowns in Bandra West, Mumbai.",
   },
 
   // 6. Restorative: Dental Implants
@@ -397,8 +397,8 @@ export const SERVICES_CATALOG: ServiceItem[] = [
     practicalInfo: [
       { label: "Treatment Timeline", value: "3 to 6 months total (healing phase included)" },
       { label: "Surgical Precision", value: "3D CBCT Computer-Guided Surgery" },
-      { label: "Success Rate", value: "Nationwide clinical success rates exceed 95%" },
-      { label: "Pricing Guidance", value: "Single tooth implant package starting from $2,900" },
+      { label: "Success Rate", value: "Clinical success rates exceed 95%" },
+      { label: "Pricing Guidance", value: "Single tooth implant package starting from ₹45,000" },
     ],
     faqs: [
       {
@@ -407,12 +407,12 @@ export const SERVICES_CATALOG: ServiceItem[] = [
       },
     ],
     featured: false,
-    pricingGuidance: "Single tooth implant complete package from $2,900",
+    pricingGuidance: "Single tooth implant complete package from ₹45,000",
     durationGuidance: "Multi-stage treatment over 3-6 months",
     route: "/services/dental-implants",
     relatedServices: ["same-day-crowns", "porcelain-veneers"],
-    metaTitle: "3D Guided Dental Implants Austin | Aura Dental Studio",
-    metaDescription: "Permanently replace missing teeth with 3D CBCT guided dental implants in Downtown Austin. Restore 100% natural bite strength & aesthetics.",
+    metaTitle: "3D Guided Dental Implants Mumbai | Aura Dental Studio",
+    metaDescription: "Permanently replace missing teeth with 3D CBCT guided dental implants in Bandra West, Mumbai. Restore 100% natural bite strength & aesthetics.",
   },
 
   // 7. Emergency: Emergency Care
@@ -431,13 +431,13 @@ export const SERVICES_CATALOG: ServiceItem[] = [
       "Priority same-day appointment slots reserved daily for urgent cases",
       "Immediate localized pain control and gentle diagnostic evaluation",
       "Transparent written treatment options provided before any emergency procedure begins",
-      "Direct 24/7 phone triage line to speak with a clinical team member",
+      "Direct phone triage line to speak with a clinical team member",
     ],
     processSteps: [
       {
         number: "01",
         title: "Immediate Phone Triage",
-        description: "Call (512) 555-0199 for immediate guidance and to reserve your priority same-day emergency slot.",
+        description: "Call +91 98765 43210 for immediate guidance and to reserve your priority same-day emergency slot.",
       },
       {
         number: "02",
@@ -456,10 +456,10 @@ export const SERVICES_CATALOG: ServiceItem[] = [
       "Patients with loose crowns, broken fillings, or acute gum swelling",
     ],
     practicalInfo: [
-      { label: "Emergency Availability", value: "Same-Day Priority Booking (Mon-Fri)" },
-      { label: "Emergency Line", value: "(512) 555-0199 for 24/7 Phone Triage" },
-      { label: "Evaluation Fee", value: "Emergency diagnosis & X-ray: $99" },
-      { label: "PPO Insurance", value: "Emergency care covered under standard PPO benefits" },
+      { label: "Emergency Availability", value: "Same-Day Priority Booking (Mon-Sat)" },
+      { label: "Emergency Line", value: "+91 98765 43210 for Phone Triage" },
+      { label: "Evaluation Fee", value: "Emergency diagnosis & X-ray: ₹1,500" },
+      { label: "Insurance", value: "Reimbursement documentation provided" },
     ],
     faqs: [
       {
@@ -468,12 +468,12 @@ export const SERVICES_CATALOG: ServiceItem[] = [
       },
     ],
     featured: true,
-    pricingGuidance: "Emergency evaluation & X-ray: $99 | Urgent treatment billed transparently",
+    pricingGuidance: "Emergency evaluation & X-ray: ₹1,500 | Urgent treatment billed transparently",
     durationGuidance: "Same-day priority booking",
     route: "/services/emergency-care",
     relatedServices: ["same-day-crowns", "preventive-hygiene"],
-    metaTitle: "Same-Day Emergency Dentist Austin | Aura Dental Studio",
-    metaDescription: "Immediate relief for severe toothaches, broken teeth & dental trauma in Downtown Austin. Same-day emergency appointments & 24/7 triage.",
+    metaTitle: "Same-Day Emergency Dentist Mumbai | Aura Dental Studio",
+    metaDescription: "Immediate relief for severe toothaches, broken teeth & dental trauma in Bandra West, Mumbai. Same-day emergency appointments & priority triage.",
   },
 ];
 

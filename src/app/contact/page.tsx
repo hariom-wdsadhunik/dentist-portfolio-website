@@ -9,9 +9,9 @@ import Button from "@/components/ui/Button";
 import { MapPinIcon, PhoneIcon, ClockIcon, CalendarIcon } from "@/components/ui/Icons";
 
 export const metadata: Metadata = {
-  title: "Contact Us & Location Directions | Aura Dental Studio Austin",
+  title: "Contact Us & Location Directions | Aura Dental Studio Mumbai",
   description:
-    "Visit Aura Dental Studio at 410 Congress Ave, Suite 200 in Downtown Austin. Find studio hours, phone numbers, validated parking garage instructions, and online message concierge.",
+    "Visit Aura Dental Studio at 204, Sea View House, Linking Road in Bandra West, Mumbai. Find studio hours, phone numbers, parking access, and online message concierge.",
 };
 
 export default function ContactPage() {
@@ -20,8 +20,8 @@ export default function ContactPage() {
       {/* 1. Page Header */}
       <PageHeader
         eyebrow="LOCATION & CONTACT"
-        title="Visit Aura Dental Studio in Downtown Austin"
-        description="Conveniently located on Congress Avenue with complimentary 2-hour validated garage parking. Reach out via direct phone, email concierge, or online booking."
+        title="Visit Aura Dental Studio in Bandra West, Mumbai"
+        description="Conveniently located on Linking Road in Bandra West with complimentary valet parking. Reach out via direct phone, email concierge, or online booking."
         primaryCta={
           <Button href="/book" variant="primary" size="lg">
             <CalendarIcon className="w-5 h-5 mr-2 text-white" />
@@ -29,9 +29,9 @@ export default function ContactPage() {
           </Button>
         }
         secondaryCta={
-          <Button href="tel:5125550199" variant="outline" size="lg">
+          <Button href="tel:+919876543210" variant="outline" size="lg">
             <PhoneIcon className="w-4 h-4 mr-2 text-[#0D3B36]" />
-            Call (512) 555-0199
+            Call +91 98765 43210
           </Button>
         }
       />
@@ -47,7 +47,7 @@ export default function ContactPage() {
                   Studio Details
                 </span>
                 <h2 className="font-serif text-3xl font-bold text-[#1C1917]">
-                  Downtown Studio Information
+                  Bandra Studio Information
                 </h2>
               </div>
 
@@ -57,8 +57,8 @@ export default function ContactPage() {
                   <MapPinIcon className="w-5 h-5 text-[#0D3B36] shrink-0 mt-0.5" />
                   <div>
                     <h3 className="font-bold text-[#1C1917]">Address</h3>
-                    <p>410 Congress Ave, Suite 200, Austin, TX 78701</p>
-                    <p className="text-xs text-[#78716C] mt-0.5">Elevator access to 2nd floor from lobby</p>
+                    <p>204, Sea View House, Linking Road, Bandra West, Mumbai, Maharashtra 400050</p>
+                    <p className="text-xs text-[#78716C] mt-0.5">Elevator access to 2nd floor from main lobby</p>
                   </div>
                 </div>
 
@@ -67,8 +67,8 @@ export default function ContactPage() {
                   <ClockIcon className="w-5 h-5 text-[#0D3B36] shrink-0 mt-0.5" />
                   <div>
                     <h3 className="font-bold text-[#1C1917]">Studio Operating Hours</h3>
-                    <p>Monday &ndash; Friday: 7:00 AM &ndash; 6:00 PM</p>
-                    <p className="text-xs text-[#78716C] mt-0.5">Saturday: By Appointment | Sunday: Closed</p>
+                    <p>Monday &ndash; Saturday: 9:00 AM &ndash; 7:00 PM</p>
+                    <p className="text-xs text-[#78716C] mt-0.5">Sunday: Closed</p>
                   </div>
                 </div>
 
@@ -77,29 +77,29 @@ export default function ContactPage() {
                   <PhoneIcon className="w-5 h-5 text-[#0D3B36] shrink-0 mt-0.5" />
                   <div>
                     <h3 className="font-bold text-[#1C1917]">Direct Phone &amp; Emergency Line</h3>
-                    <a href="tel:5125550199" className="text-[#0D3B36] font-semibold hover:underline">
-                      (512) 555-0199
+                    <a href="tel:+919876543210" className="text-[#0D3B36] font-semibold hover:underline">
+                      +91 98765 43210
                     </a>
-                    <p className="text-xs text-[#78716C] mt-0.5">24/7 same-day emergency triage availability</p>
+                    <p className="text-xs text-[#78716C] mt-0.5">Same-day urgent dental assessment availability</p>
                   </div>
                 </div>
               </div>
 
-              {/* Validated Parking Instructions */}
+              {/* Parking & Access Instructions */}
               <div className="bg-white p-5 rounded-xl border border-[#E7E2D8] text-xs text-[#1C1917] space-y-2">
                 <p className="font-bold text-[#0D3B36] flex items-center text-sm">
                   <MapPinIcon className="w-4 h-4 mr-1.5 text-[#0D3B36]" />
-                  Validated Garage Parking Instructions:
+                  Parking &amp; Access Instructions:
                 </p>
                 <p className="text-[#44403C] leading-relaxed">
-                  Complimentary 2-hour validated parking is available in the <strong>Congress Center Garage</strong> (entrance accessible on 4th Street between Congress Ave and Brazos St). Bring your garage ticket to our front desk concierge for validation.
+                  Complimentary valet parking is available directly at the Sea View House entrance on Linking Road. 5 minutes from Bandra railway station with convenient rideshare drop-off (Uber/Ola).
                 </p>
               </div>
 
               {/* Google Maps External Button */}
               <div>
                 <Button
-                  href="https://maps.google.com/?q=410+Congress+Ave+Austin+TX"
+                  href="https://maps.google.com/?q=Linking+Road+Bandra+West+Mumbai"
                   external
                   variant="primary"
                   size="md"

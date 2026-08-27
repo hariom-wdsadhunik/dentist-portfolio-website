@@ -21,7 +21,7 @@ export const MobileActionBar: React.FC = () => {
       <div className="grid grid-cols-2 gap-3 max-w-md mx-auto">
         {/* Call Action Button */}
         <a
-          href="tel:5125550199"
+          href="tel:+919876543210"
           className="flex items-center justify-center space-x-2 bg-[#F4F0E8] text-[#1C1917] hover:bg-[#E7E2D8] active:bg-[#DCD6C9] font-sans text-sm font-semibold py-3 px-4 rounded-lg border border-[#E7E2D8] transition-colors min-h-[48px]"
         >
           <PhoneIcon className="w-4 h-4 text-[#0D3B36]" />

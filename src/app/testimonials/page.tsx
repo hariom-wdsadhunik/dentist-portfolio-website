@@ -10,9 +10,9 @@ import { StarIcon, CalendarIcon, QuoteIcon, ChevronRightIcon } from "@/component
 import { TESTIMONIALS_DATA } from "@/lib/testimonialData";
 
 export const metadata: Metadata = {
-  title: "Patient Stories & Reviews | Aura Dental Studio Austin",
+  title: "Patient Stories & Reviews | Aura Dental Studio Mumbai",
   description:
-    "Explore patient stories and portfolio demonstration reviews for Aura Dental Studio in Downtown Austin. Discover why patients appreciate gentle, transparent, 3D digital dental care.",
+    "Explore patient stories and portfolio demonstration reviews for Aura Dental Studio in Bandra West, Mumbai. Discover why patients appreciate gentle, transparent, 3D digital dental care.",
 };
 
 export default function TestimonialsPage() {
@@ -24,7 +24,7 @@ export default function TestimonialsPage() {
       {/* 1. Page Header */}
       <PageHeader
         eyebrow="PATIENT EXPERIENCES & STORIES"
-        title="Real Experiences from Austin Community Members"
+        title="Real Experiences from Mumbai Community Members"
         description="Discover how transparent co-care planning, gentle 3D digital precision, and calming studio amenities shape the patient experience at Aura Dental Studio."
         primaryCta={
           <Button href="/book" variant="primary" size="lg">

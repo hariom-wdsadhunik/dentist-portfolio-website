@@ -28,18 +28,18 @@ export const Header: React.FC = () => {
           <div className="flex items-center space-x-6">
             <div className="flex items-center space-x-1.5">
               <MapPinIcon className="w-3.5 h-3.5 text-[#0D3B36]" />
-              <span>410 Congress Ave, Suite 200, Austin, TX 78701</span>
+              <span>204, Sea View House, Bandra West, Mumbai 400050</span>
             </div>
             <div className="flex items-center space-x-1.5">
               <ClockIcon className="w-3.5 h-3.5 text-[#0D3B36]" />
-              <span>Mon-Fri: 7:00 AM - 6:00 PM</span>
+              <span>Mon-Sat: 9:00 AM - 7:00 PM</span>
             </div>
           </div>
           <div className="flex items-center space-x-1.5">
             <PhoneIcon className="w-3.5 h-3.5 text-[#0D3B36]" />
             <span className="font-semibold text-[#1C1917]">Emergency Triage:</span>
-            <a href="tel:5125550199" className="hover:text-[#0D3B36] font-medium transition-colors">
-              (512) 555-0199
+            <a href="tel:+919876543210" className="hover:text-[#0D3B36] font-medium transition-colors">
+              +91 98765 43210
             </a>
           </div>
         </div>
@@ -78,7 +78,7 @@ export const Header: React.FC = () => {
         <div className="flex items-center space-x-3">
           {/* Direct Call Button (Mobile) */}
           <a
-            href="tel:5125550199"
+            href="tel:+919876543210"
             aria-label="Call clinic"
             className="lg:hidden p-2 text-[#0D3B36] hover:bg-[#F4F0E8] rounded-md transition-colors"
           >

@@ -15,7 +15,7 @@ export const HeroSection: React.FC = () => {
             {/* Eyebrow Tag */}
             <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-[#F4F0E8] border border-[#E7E2D8] text-xs font-bold text-[#0D3B36] uppercase tracking-wider">
               <SparklesIcon className="w-3.5 h-3.5 text-[#D4A373]" />
-              <span>Downtown Austin Dental Studio</span>
+              <span>Bandra West, Mumbai Dental Studio</span>
             </div>
 
             {/* Main Editorial Headline */}
@@ -63,7 +63,7 @@ export const HeroSection: React.FC = () => {
               <div className="relative aspect-[4/3] rounded-xl overflow-hidden bg-[#0D3B36]">
                 <Image
                   src="/images/hero-operatory-visual.svg"
-                  alt="Aura Dental Studio Modern Operatory Suite in Downtown Austin"
+                  alt="Aura Dental Studio Modern Operatory Suite in Bandra West, Mumbai"
                   fill
                   priority
                   sizes="(max-width: 1024px) 100vw, 40vw"

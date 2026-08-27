@@ -6,9 +6,9 @@ import Container from "@/components/ui/Container";
 import BookingFlow from "@/components/booking/BookingFlow";
 
 export const metadata: Metadata = {
-  title: "Book Appointment Demonstration | Aura Dental Studio Austin",
+  title: "Book Appointment Demonstration | Aura Dental Studio Mumbai",
   description:
-    "Interactive appointment booking demonstration for Aura Dental Studio in Downtown Austin. Select services, preferred dates, and time slots in a portfolio showcase flow.",
+    "Interactive appointment booking demonstration for Aura Dental Studio in Bandra West, Mumbai. Select services, preferred dates, and time slots in a portfolio showcase flow.",
 };
 
 export default function BookPage() {

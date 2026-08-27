@@ -79,9 +79,9 @@ export const BookingSummary: React.FC<BookingSummaryProps> = ({
 
       {/* Location Confirmation */}
       <div className="pt-4 border-t border-[#E7E2D8] bg-[#FBF9F5] p-3 rounded-lg text-[11px] text-[#78716C] space-y-0.5">
-        <p className="font-bold text-[#0D3B36]">Aura Dental Studio Downtown</p>
-        <p>410 Congress Ave, Suite 200, Austin, TX</p>
-        <p className="text-[#0D3B36]">✓ Validated Garage Parking Included</p>
+        <p className="font-bold text-[#0D3B36]">Aura Dental Studio Bandra West</p>
+        <p>204, Sea View House, Linking Road, Bandra West, Mumbai 400050</p>
+        <p className="text-[#0D3B36]">✓ Complimentary Valet Parking Included</p>
       </div>
     </div>
   );

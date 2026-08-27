@@ -10,9 +10,9 @@ import { CalendarIcon, ShieldCheckIcon, PhoneIcon } from "@/components/ui/Icons"
 import { FAQ_ENTRIES, FaqEntry } from "@/lib/faqData";
 
 export const metadata: Metadata = {
-  title: "Frequently Asked Questions & Insurance PPO | Aura Dental Studio Austin",
+  title: "Frequently Asked Questions & Payment Options | Aura Dental Studio Mumbai",
   description:
-    "Find clear answers about PPO dental insurance, transparent pricing, appointment scheduling, comfort amenities, and same-day CEREC crowns at Aura Dental Studio in Austin.",
+    "Find clear answers about payment options, insurance reimbursement documentation, transparent pricing, appointment scheduling, and comfort amenities at Aura Dental Studio in Bandra West, Mumbai.",
 };
 
 export default function FaqPage() {
@@ -30,7 +30,7 @@ export default function FaqPage() {
       <PageHeader
         eyebrow="PATIENT FAQS & FINANCIAL TRANSPARENCY"
         title="Transparent Financials & Frequently Asked Questions"
-        description="Find clear, honest answers regarding PPO insurance claims, upfront written estimates, appointment punctuality, comfort amenities, and same-day treatment options."
+        description="Find clear, honest answers regarding payment methods, insurance claim documentation, upfront written estimates, appointment punctuality, comfort amenities, and same-day treatment options."
         primaryCta={
           <Button href="/book" variant="primary" size="lg">
             <CalendarIcon className="w-5 h-5 mr-2 text-white" />
@@ -74,7 +74,7 @@ export default function FaqPage() {
         </Container>
       </Section>
 
-      {/* 3. Insurance PPO & Payment Guidance Panel */}
+      {/* 3. Insurance & Payment Guidance Panel */}
       <Section bg="linen" className="py-16 md:py-24 border-b border-[#E7E2D8]">
         <Container className="max-w-4xl mx-auto space-y-8">
           <div className="text-center space-y-3">
@@ -82,33 +82,33 @@ export default function FaqPage() {
               Financial Transparency Standard
             </span>
             <h2 className="font-serif text-3xl font-bold text-[#1C1917]">
-              PPO Insurance &amp; Flexible Payment Options
+              Payment Options &amp; Claim Documentation
             </h2>
             <p className="text-base text-[#44403C] leading-relaxed max-w-2xl mx-auto">
-              We work directly with major dental PPO providers and offer flexible financing to make high-quality oral healthcare accessible.
+              We accept all major Indian payment methods and provide itemized documentation for private dental insurance reimbursement claims.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-xs text-[#1C1917]">
             <div className="bg-white p-6 rounded-xl border border-[#E7E2D8] space-y-2">
               <ShieldCheckIcon className="w-6 h-6 text-[#0D3B36]" />
-              <h3 className="font-bold text-sm">Major PPO Networks</h3>
+              <h3 className="font-bold text-sm">UPI &amp; Cards Accepted</h3>
               <p className="text-[#78716C] leading-relaxed">
-                Delta Dental, MetLife, Cigna, Aetna, Guardian, Humana, and UnitedConcordia PPO plans accepted.
+                UPI (GPay, PhonePe, Paytm), credit/debit cards, and direct bank transfers accepted seamlessly.
               </p>
             </div>
             <div className="bg-white p-6 rounded-xl border border-[#E7E2D8] space-y-2">
               <ShieldCheckIcon className="w-6 h-6 text-[#0D3B36]" />
-              <h3 className="font-bold text-sm">Itemized Estimates</h3>
+              <h3 className="font-bold text-sm">Insurance Claim Papers</h3>
               <p className="text-[#78716C] leading-relaxed">
-                Written breakdown of co-pays and insurance contributions provided before treatment starts.
+                Detailed itemized bills and treatment summaries provided for private health/dental insurance claims.
               </p>
             </div>
             <div className="bg-white p-6 rounded-xl border border-[#E7E2D8] space-y-2">
               <ShieldCheckIcon className="w-6 h-6 text-[#0D3B36]" />
-              <h3 className="font-bold text-sm">0% Interest Financing</h3>
+              <h3 className="font-bold text-sm">Flexible Installments</h3>
               <p className="text-[#78716C] leading-relaxed">
-                Interest-free CareCredit and Sunbit monthly payment plans starting from $99/mo.
+                Monthly installment options available for major cosmetic and restorative treatment plans.
               </p>
             </div>
           </div>
@@ -127,9 +127,9 @@ export default function FaqPage() {
           </Button>
         }
         secondaryCta={
-          <Button href="tel:5125550199" variant="outline" size="lg" className="text-white border-white/30 hover:bg-white/10 hover:border-white">
+          <Button href="tel:+919876543210" variant="outline" size="lg" className="text-white border-white/30 hover:bg-white/10 hover:border-white">
             <PhoneIcon className="w-4 h-4 mr-2 text-white" />
-            Call Concierge (512) 555-0199
+            Call Concierge +91 98765 43210
           </Button>
         }
       />

@@ -11,9 +11,9 @@ import { CalendarIcon, ShieldCheckIcon, ChevronRightIcon } from "@/components/ui
 import { TEAM_MEMBERS, CLINICAL_STANDARDS } from "@/lib/teamData";
 
 export const metadata: Metadata = {
-  title: "About Dr. Elena Rostova & Team | Aura Dental Studio Austin",
+  title: "About Dr. Elena Rostova & Team | Aura Dental Studio Mumbai",
   description:
-    "Meet Dr. Elena Rostova, DDS, FAGD, and the experienced team at Aura Dental Studio in Downtown Austin. Discover our conservative, patient-centered care philosophy.",
+    "Meet Dr. Elena Rostova, BDS, MDS, and the experienced team at Aura Dental Studio in Bandra West, Mumbai. Discover our conservative, patient-centered care philosophy.",
 };
 
 export default function AboutPage() {
@@ -23,7 +23,7 @@ export default function AboutPage() {
       <PageHeader
         eyebrow="OUR DENTISTS & PHILOSOPHY"
         title="Experienced, Compassionate Care Led by Clinical Excellence"
-        description="Founded by Dr. Elena Rostova, DDS, FAGD, Aura Dental Studio combines high-end 3D digital precision with warm, anxiety-reducing care in Downtown Austin."
+        description="Founded by Dr. Elena Rostova, BDS, MDS, Aura Dental Studio combines high-end 3D digital precision with warm, anxiety-reducing care in Bandra West, Mumbai."
         primaryCta={
           <Button href="/book" variant="primary" size="lg">
             <CalendarIcon className="w-5 h-5 mr-2 text-white" />
@@ -47,7 +47,7 @@ export default function AboutPage() {
             <div className="relative aspect-[3/4] rounded-xl overflow-hidden bg-[#0D3B36]">
               <Image
                 src="/images/dentist-portrait-visual.svg"
-                alt="Dr. Elena Rostova, DDS, FAGD, Founder & Lead Dentist"
+                alt="Dr. Elena Rostova, BDS, MDS, Founder & Lead Dentist"
                 fill
                 sizes="(max-width: 1024px) 100vw, 35vw"
                 className="object-cover"
@@ -61,7 +61,7 @@ export default function AboutPage() {
               &ldquo;Dental care should never feel rushed, intimidating, or transactional. We take the time to listen, explain high-definition 3D scans side-by-side, and ensure you remain in 100% control of your care plan.&rdquo;
             </blockquote>
             <p>
-              Dr. Rostova earned her Doctor of Dental Surgery degree from the UT Health Science Center and went on to complete over 500 hours of advanced continuing clinical education to earn her Fellowship with the Academy of General Dentistry (FAGD)—an honor achieved by fewer than 6% of general dentists nationwide.
+              Dr. Rostova completed her postgraduate specialization (MDS) in Prosthodontics and has devoted over 15 years to advancing precision digital dentistry and anxiety-reducing patient care in Mumbai.
             </p>
             <p>
               Her practice focuses on conservative enamel preservation, same-day ceramic restorations, and creating a calming environment where patient anxiety is met with empathy and respect.
@@ -72,11 +72,11 @@ export default function AboutPage() {
           <div className="flex flex-wrap gap-3 pt-2">
             <div className="flex items-center space-x-2.5 p-3 rounded-lg bg-white border border-[#E7E2D8] text-xs text-[#1C1917]">
               <ShieldCheckIcon className="w-5 h-5 text-[#0D3B36] shrink-0" />
-              <span>Fellow, Academy of General Dentistry (FAGD)</span>
+              <span>BDS, MDS (Prosthodontics)</span>
             </div>
             <div className="flex items-center space-x-2.5 p-3 rounded-lg bg-white border border-[#E7E2D8] text-xs text-[#1C1917]">
               <ShieldCheckIcon className="w-5 h-5 text-[#0D3B36] shrink-0" />
-              <span>DDS, UT Health Science Center</span>
+              <span>15+ Years Clinical Leadership</span>
             </div>
           </div>
         }

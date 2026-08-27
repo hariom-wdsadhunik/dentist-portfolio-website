@@ -38,7 +38,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   if (!service) {
     return {
-      title: "Treatment Not Found | Aura Dental Studio Austin",
+      title: "Treatment Not Found | Aura Dental Studio Mumbai",
     };
   }
 
@@ -81,9 +81,9 @@ export default async function ServiceDetailPage({ params }: PageProps) {
         description={service.heroIntro}
         primaryCta={
           isEmergency ? (
-            <Button href="tel:5125550199" variant="primary" size="lg">
+            <Button href="tel:+919876543210" variant="primary" size="lg">
               <PhoneIcon className="w-5 h-5 mr-2 text-white" />
-              Call Emergency Triage Line
+              Call Triage Line +91 98765 43210
             </Button>
           ) : (
             <Button href="/book" variant="primary" size="lg">
@@ -115,7 +115,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
                   {service.name}
                 </h3>
                 <p className="text-xs text-[#E7E2D8]/80 leading-relaxed">
-                  Delivered with 3D digital precision and soothing studio comfort amenities in Austin.
+                  Delivered with 3D digital precision and soothing studio comfort amenities in Bandra West, Mumbai.
                 </p>
               </div>
               <div className="pt-4 border-t border-white/10 text-xs text-[#E7E2D8]/70">
@@ -256,9 +256,9 @@ export default async function ServiceDetailPage({ params }: PageProps) {
         description="Book your comprehensive 3D digital assessment online or contact our office concierge team."
         primaryCta={
           isEmergency ? (
-            <Button href="tel:5125550199" variant="gold" size="lg" className="shadow-lg">
+            <Button href="tel:+919876543210" variant="gold" size="lg" className="shadow-lg">
               <PhoneIcon className="w-5 h-5 mr-2 text-[#1C1917]" />
-              Call Emergency Triage (512) 555-0199
+              Call Triage Line +91 98765 43210
             </Button>
           ) : (
             <Button href="/book" variant="gold" size="lg" className="shadow-lg">

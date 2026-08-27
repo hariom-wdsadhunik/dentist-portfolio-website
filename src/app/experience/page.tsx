@@ -20,9 +20,9 @@ import {
 import { COMFORT_AMENITIES, FIRST_VISIT_STEPS } from "@/lib/homepageData";
 
 export const metadata: Metadata = {
-  title: "The Patient Experience & Comfort Care | Aura Dental Studio Austin",
+  title: "The Patient Experience & Comfort Care | Aura Dental Studio Mumbai",
   description:
-    "Discover how Aura Dental Studio eliminates dental anxiety with soothing amenities (Bose headphones, warm towels, ergonomic chairs), 3D digital impressions, and transparent co-care planning.",
+    "Discover how Aura Dental Studio eliminates dental anxiety with soothing amenities (Bose headphones, warm towels, ergonomic chairs), 3D digital impressions, and transparent co-care planning in Bandra West, Mumbai.",
 };
 
 const iconMap = {
@@ -63,7 +63,7 @@ export default function ExperiencePage() {
             <div className="relative aspect-[16/10] rounded-xl overflow-hidden bg-[#0D3B36]">
               <Image
                 src="/images/clinic-lounge-visual.svg"
-                alt="Aura Dental Studio Reception Sanctuary Lounge in Downtown Austin"
+                alt="Aura Dental Studio Reception Sanctuary Lounge in Bandra West, Mumbai"
                 fill
                 sizes="(max-width: 1024px) 100vw, 40vw"
                 className="object-cover"
@@ -74,7 +74,7 @@ export default function ExperiencePage() {
         body={
           <>
             <p>
-              The moment you step into our studio, you will notice the difference. We replaced cold fluorescent lighting and sterile waiting rooms with warm wood tones, natural sunlight, subtle organic aromatherapy, and a peaceful lounge.
+              The moment you step into our Bandra West studio, you will notice the difference. We replaced cold fluorescent lighting and sterile waiting rooms with warm wood tones, natural sunlight, subtle organic aromatherapy, and a peaceful lounge.
             </p>
             <p>
               We respect your busy schedule with a strict <strong>Zero-Wait Punctuality Standard</strong>. Your appointment starts on time, every time, allowing you to relax without feeling rushed.

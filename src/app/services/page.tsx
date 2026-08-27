@@ -10,9 +10,9 @@ import { CalendarIcon, ChevronRightIcon, ShieldCheckIcon } from "@/components/ui
 import { SERVICES_CATALOG, ServiceItem } from "@/lib/servicesData";
 
 export const metadata: Metadata = {
-  title: "Services Catalog & Treatments | Aura Dental Studio Austin",
+  title: "Services Catalog & Treatments | Aura Dental Studio Mumbai",
   description:
-    "Explore our complete dental treatment catalog in Downtown Austin: 3D preventive hygiene, clear aligners, same-day crowns, porcelain veneers, teeth whitening, implants, and emergency care.",
+    "Explore our complete dental treatment catalog in Bandra West, Mumbai: 3D preventive hygiene, clear aligners, same-day crowns, porcelain veneers, teeth whitening, implants, and emergency care.",
 };
 
 export default function ServicesPage() {
@@ -31,7 +31,7 @@ export default function ServicesPage() {
         }
         secondaryCta={
           <Button href="/faq" variant="outline" size="lg">
-            Insurance &amp; PPO FAQs
+            Payment &amp; Financial FAQs
           </Button>
         }
       />
@@ -47,7 +47,7 @@ export default function ServicesPage() {
               Our Full Treatment Offerings
             </h2>
             <p className="font-sans text-base text-[#44403C] leading-relaxed">
-              Click any service below for detailed treatment procedures, recovery expectations, PPO coverage details, and clinical FAQs.
+              Click any service below for detailed treatment procedures, recovery expectations, financial guidance, and clinical FAQs.
             </p>
           </div>
 
@@ -93,7 +93,7 @@ export default function ServicesPage() {
         </Container>
       </Section>
 
-      {/* 3. Insurance & Upfront Pricing Standard Panel */}
+      {/* 3. Financial Transparency Standard Panel */}
       <Section bg="linen" className="py-16 md:py-24 border-b border-[#E7E2D8]">
         <Container className="max-w-4xl mx-auto space-y-8">
           <div className="text-center space-y-3">
@@ -104,30 +104,30 @@ export default function ServicesPage() {
               No Surprise Billing or Hidden Costs
             </h2>
             <p className="text-base text-[#44403C] leading-relaxed max-w-2xl mx-auto">
-              We provide itemized written estimates before treatment begins and file claims directly with major PPO insurance providers on your behalf.
+              We provide itemized written estimates before treatment begins and supply official claim documentation for private insurance reimbursement.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-xs text-[#1C1917]">
             <div className="bg-white p-6 rounded-xl border border-[#E7E2D8] space-y-2">
               <ShieldCheckIcon className="w-6 h-6 text-[#0D3B36]" />
-              <h3 className="font-bold text-sm">PPO Insurance Accepted</h3>
+              <h3 className="font-bold text-sm">Insurance Claim Papers</h3>
               <p className="text-[#78716C] leading-relaxed">
-                Delta Dental, MetLife, Cigna, Aetna, Guardian, and more.
+                Itemized bills provided for private health/dental insurance reimbursement claims.
               </p>
             </div>
             <div className="bg-white p-6 rounded-xl border border-[#E7E2D8] space-y-2">
               <ShieldCheckIcon className="w-6 h-6 text-[#0D3B36]" />
               <h3 className="font-bold text-sm">Upfront Written Estimates</h3>
               <p className="text-[#78716C] leading-relaxed">
-                Every co-pay and out-of-pocket cost explained before care starts.
+                Every fee and cost breakdown explained clearly before care starts.
               </p>
             </div>
             <div className="bg-white p-6 rounded-xl border border-[#E7E2D8] space-y-2">
               <ShieldCheckIcon className="w-6 h-6 text-[#0D3B36]" />
-              <h3 className="font-bold text-sm">CareCredit 0% Interest</h3>
+              <h3 className="font-bold text-sm">Flexible Installment Options</h3>
               <p className="text-[#78716C] leading-relaxed">
-                Flexible monthly payment plans for cosmetic and restorative treatments.
+                Structured monthly payment plans for major cosmetic and restorative treatments.
               </p>
             </div>
           </div>

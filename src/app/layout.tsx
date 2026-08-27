@@ -28,15 +28,15 @@ const baseUrl = process.env.VERCEL_URL
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
-  title: "Aura Dental Studio | Modern Gentle Dentistry in Downtown Austin",
+  title: "Aura Dental Studio | Modern Gentle Dentistry in Bandra West, Mumbai",
   description:
-    "Experience stress-free oral care with transparent pricing, 3D digital precision, and soothing comfort amenities at Aura Dental Studio in Downtown Austin, TX.",
+    "Experience stress-free oral care with transparent pricing, 3D digital precision, and soothing comfort amenities at Aura Dental Studio in Bandra West, Mumbai.",
   keywords: [
-    "Dentist Austin",
-    "Downtown Austin Dentist",
-    "Gentle Dentistry",
-    "Clear Aligners Austin",
-    "Same Day Crowns",
+    "Dentist Mumbai",
+    "Dentist Bandra West",
+    "Gentle Dentistry Mumbai",
+    "Clear Aligners Mumbai",
+    "Same Day Crowns Mumbai",
   ],
   authors: [{ name: "Hari Om / Aura Dental Studio Team" }],
   icons: {
@@ -45,16 +45,16 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Aura Dental Studio | Modern Gentle Dentistry",
     description:
-      "A modern, patient-centric boutique dental studio providing gentle preventive care, precision cosmetic enhancements, and stress-free restorative dentistry in Downtown Austin.",
+      "A modern, patient-centric boutique dental studio providing gentle preventive care, precision cosmetic enhancements, and stress-free restorative dentistry in Bandra West, Mumbai.",
     siteName: "Aura Dental Studio",
-    locale: "en_US",
+    locale: "en_IN",
     type: "website",
     images: [
       {
         url: "/og-image.svg",
         width: 1200,
         height: 630,
-        alt: "Aura Dental Studio Modern Gentle Dentistry",
+        alt: "Aura Dental Studio Modern Gentle Dentistry in Mumbai",
       },
     ],
   },
