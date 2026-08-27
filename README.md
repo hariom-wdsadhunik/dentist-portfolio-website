@@ -1,8 +1,8 @@
-# Dentist Portfolio Website
+# Dentist Portfolio Website (Aura Dental Studio)
 
-A premium sample portfolio website for a fictional dental clinic. This project serves as a showcase portfolio/demo application demonstrating modern frontend architecture, accessibility, clean design system integration, and responsive UX.
+A premium sample portfolio website for a fictional dental clinic ("Aura Dental Studio"). This project serves as a showcase portfolio/demo application demonstrating modern frontend architecture, accessibility, clean design system integration, and responsive UX.
 
-> **Current Phase**: `PHASE 0 — PROJECT INITIALIZATION`
+> **Current Phase**: `PHASE 1 — PRODUCT DEFINITION`
 
 ---
 
@@ -22,12 +22,20 @@ The primary objective of this repository is to build a modern, high-performance 
 
 ---
 
+## Documentation
+
+- [`docs/PRODUCT_BRIEF.md`](docs/PRODUCT_BRIEF.md) — Product brief, clinic profile, target audience, business goals, service catalog, trust framework, and functional/non-functional requirements.
+- [`docs/ENGINEERING_CONVENTIONS.md`](docs/ENGINEERING_CONVENTIONS.md) — Engineering rules, accessibility standards, responsive guidelines, and code quality conventions.
+
+---
+
 ## Project Structure
 
 ```text
 dentist-portfolio-website/
-├── docs/                        # Engineering conventions & documentation
-│   └── ENGINEERING_CONVENTIONS.md
+├── docs/                        # Project specification & engineering guidelines
+│   ├── ENGINEERING_CONVENTIONS.md
+│   └── PRODUCT_BRIEF.md
 ├── public/                      # Static assets
 │   ├── icons/                   # SVG icons & symbols
 │   └── images/                  # High-resolution media assets
@@ -59,7 +67,7 @@ dentist-portfolio-website/
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/<your-username>/dentist-portfolio-website.git
+   git clone https://github.com/hariom-wdsadhunik/dentist-portfolio-website.git
    cd dentist-portfolio-website
    ```
 
@@ -93,9 +101,3 @@ dentist-portfolio-website/
   npm run lint
   ```
   Runs ESLint to check for code quality and style compliance.
-
----
-
-## Engineering Conventions
-
-Refer to [`docs/ENGINEERING_CONVENTIONS.md`](docs/ENGINEERING_CONVENTIONS.md) for full project standards regarding component design, TypeScript usage, accessibility, and code quality.
