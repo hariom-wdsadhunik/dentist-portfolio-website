@@ -2,7 +2,7 @@
 
 A premium sample portfolio website for a fictional dental clinic ("Aura Dental Studio"). This project serves as a showcase portfolio/demo application demonstrating modern frontend architecture, accessibility, clean design system integration, and responsive UX.
 
-> **Current Phase**: `PHASE 9 — SERVICE DETAIL SYSTEM`
+> **Current Phase**: `PHASE 10 — SUPPORT & CONTACT PAGES`
 
 ---
 
@@ -24,6 +24,7 @@ The primary objective of this repository is to build a modern, high-performance 
 
 ## Documentation Index
 
+- [`docs/SUPPORT_PAGES_IMPLEMENTATION.md`](docs/SUPPORT_PAGES_IMPLEMENTATION.md) — Implementation record for support & conversion routes (`/testimonials`, `/faq`, `/contact`), data models (`testimonialData.ts`, `faqData.ts`), client-side `ContactForm` validation, demo safety disclaimers, accessibility, and SEO metadata.
 - [`docs/SERVICE_DETAIL_IMPLEMENTATION.md`](docs/SERVICE_DETAIL_IMPLEMENTATION.md) — Implementation record for the dynamic service detail system (`/services/[slug]`), static route pre-rendering (`generateStaticParams`), service data model, shared UI patterns (`FaqAccordion`, `MetadataRow`), SEO metadata, accessibility, and content claim safety.
 - [`docs/CORE_INTERNAL_PAGES_IMPLEMENTATION.md`](docs/CORE_INTERNAL_PAGES_IMPLEMENTATION.md) — Implementation record for the core internal marketing routes (`/about`, `/services`, `/experience`), reusable shared pattern primitives (`PageHeader`, `Breadcrumbs`, `EditorialSplit`, `CardGrid`, `ProcessSteps`, `CtaBanner`, `RelatedServices`), structured datasets (`servicesData.ts`, `teamData.ts`), responsive/accessibility verification, and SEO metadata.
 - [`docs/INTERNAL_PAGES_ARCHITECTURE.md`](docs/INTERNAL_PAGES_ARCHITECTURE.md) — Comprehensive architecture specification for internal routes (`/about`, `/services`, `/services/[slug]`, `/experience`, `/testimonials`, `/faq`, `/contact`), page taxonomy matrix (Types A-F), shared template shell strategy, routing hierarchy, CTA matrix, content data architecture, SEO schema, and content safety rules.
@@ -55,28 +56,34 @@ dentist-portfolio-website/
 │   ├── INTERNAL_PAGES_ARCHITECTURE.md
 │   ├── PRODUCT_BRIEF.md
 │   ├── SERVICE_DETAIL_IMPLEMENTATION.md
-│   └── SHARED_PAGE_PATTERNS.md
+│   ├── SHARED_PAGE_PATTERNS.md
+│   └── SUPPORT_PAGES_IMPLEMENTATION.md
 ├── public/                      # Static assets
 │   ├── icons/                   # SVG icons & symbols
 │   └── images/                  # High-resolution media assets
 ├── src/
 │   ├── app/                     # Next.js App Router (pages & layouts)
 │   │   ├── about/               # About page route
+│   │   ├── contact/             # Contact & Location route
 │   │   ├── experience/          # Experience page route
+│   │   ├── faq/                 # FAQs & Financials route
 │   │   ├── services/            # Services Catalog route
 │   │   │   └── [slug]/          # Dynamic Service Detail route (7 treatments)
+│   │   ├── testimonials/        # Patient Stories route
 │   │   ├── globals.css
 │   │   ├── layout.tsx
 │   │   └── page.tsx             # Homepage route
 │   ├── components/              # Shared UI primitives, global shell & page patterns
 │   │   ├── global/              # Header, Footer, MobileDrawer, MobileActionBar
-│   │   ├── shared/              # PageHeader, Breadcrumbs, EditorialSplit, CardGrid, ProcessSteps, FaqAccordion, MetadataRow, CtaBanner, RelatedServices
+│   │   ├── shared/              # PageHeader, Breadcrumbs, EditorialSplit, CardGrid, ProcessSteps, FaqAccordion, MetadataRow, ContactForm, CtaBanner, RelatedServices
 │   │   └── ui/                  # Button, Container, Section, Divider, Icons
 │   ├── hooks/                   # Custom React hooks
 │   ├── lib/                     # Homepage structured data & utilities
+│   │   ├── faqData.ts
 │   │   ├── homepageData.ts
 │   │   ├── servicesData.ts
-│   │   └── teamData.ts
+│   │   ├── teamData.ts
+│   │   └── testimonialData.ts
 │   ├── sections/                # Section components
 │   │   └── home/                # Hero, Trust, Services, Dentist, Experience, FirstVisit, Testimonials, Location, FinalCTA
 │   └── styles/                  # Global styles & Tailwind configuration

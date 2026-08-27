@@ -1,0 +1,138 @@
+import React from "react";
+import { Metadata } from "next";
+import PageHeader from "@/components/shared/PageHeader";
+import FaqAccordion from "@/components/shared/FaqAccordion";
+import CtaBanner from "@/components/shared/CtaBanner";
+import Section from "@/components/ui/Section";
+import Container from "@/components/ui/Container";
+import Button from "@/components/ui/Button";
+import { CalendarIcon, ShieldCheckIcon, PhoneIcon } from "@/components/ui/Icons";
+import { FAQ_ENTRIES, FaqEntry } from "@/lib/faqData";
+
+export const metadata: Metadata = {
+  title: "Frequently Asked Questions & Insurance PPO | Aura Dental Studio Austin",
+  description:
+    "Find clear answers about PPO dental insurance, transparent pricing, appointment scheduling, comfort amenities, and same-day CEREC crowns at Aura Dental Studio in Austin.",
+};
+
+export default function FaqPage() {
+  const categories: Array<FaqEntry["category"]> = [
+    "Appointments",
+    "Financials & Insurance",
+    "Comfort & Safety",
+    "Treatments",
+    "Emergency",
+  ];
+
+  return (
+    <div className="flex-1 flex flex-col">
+      {/* 1. Page Header */}
+      <PageHeader
+        eyebrow="PATIENT FAQS & FINANCIAL TRANSPARENCY"
+        title="Transparent Financials & Frequently Asked Questions"
+        description="Find clear, honest answers regarding PPO insurance claims, upfront written estimates, appointment punctuality, comfort amenities, and same-day treatment options."
+        primaryCta={
+          <Button href="/book" variant="primary" size="lg">
+            <CalendarIcon className="w-5 h-5 mr-2 text-white" />
+            Book Appointment Online
+          </Button>
+        }
+        secondaryCta={
+          <Button href="/contact" variant="outline" size="lg">
+            Contact Office Concierge
+          </Button>
+        }
+      />
+
+      {/* 2. Categorized Accordion Groups */}
+      <Section bg="canvas" className="py-16 md:py-24 border-b border-[#E7E2D8]">
+        <Container className="max-w-4xl mx-auto space-y-16">
+          {categories.map((category) => {
+            const categoryFaqs = FAQ_ENTRIES.filter((f) => f.category === category);
+            if (categoryFaqs.length === 0) return null;
+
+            return (
+              <div key={category} className="space-y-6">
+                <div className="border-b border-[#E7E2D8] pb-3 flex items-center justify-between">
+                  <h2 className="font-serif text-2xl font-bold text-[#1C1917]">
+                    {category}
+                  </h2>
+                  <span className="text-xs text-[#78716C]">
+                    {categoryFaqs.length} Questions
+                  </span>
+                </div>
+
+                <FaqAccordion
+                  items={categoryFaqs.map((f) => ({
+                    question: f.question,
+                    answer: f.answer,
+                  }))}
+                />
+              </div>
+            );
+          })}
+        </Container>
+      </Section>
+
+      {/* 3. Insurance PPO & Payment Guidance Panel */}
+      <Section bg="linen" className="py-16 md:py-24 border-b border-[#E7E2D8]">
+        <Container className="max-w-4xl mx-auto space-y-8">
+          <div className="text-center space-y-3">
+            <span className="text-xs font-bold uppercase tracking-wider text-[#0D3B36] bg-white px-3 py-1 rounded-full border border-[#E7E2D8] inline-block">
+              Financial Transparency Guarantee
+            </span>
+            <h2 className="font-serif text-3xl font-bold text-[#1C1917]">
+              PPO Insurance &amp; Flexible Payment Options
+            </h2>
+            <p className="text-base text-[#44403C] leading-relaxed max-w-2xl mx-auto">
+              We work directly with major dental PPO providers and offer flexible financing to make high-quality oral healthcare accessible.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-xs text-[#1C1917]">
+            <div className="bg-white p-6 rounded-xl border border-[#E7E2D8] space-y-2">
+              <ShieldCheckIcon className="w-6 h-6 text-[#0D3B36]" />
+              <h3 className="font-bold text-sm">Major PPO Networks</h3>
+              <p className="text-[#78716C] leading-relaxed">
+                Delta Dental, MetLife, Cigna, Aetna, Guardian, Humana, and UnitedConcordia PPO plans accepted.
+              </p>
+            </div>
+            <div className="bg-white p-6 rounded-xl border border-[#E7E2D8] space-y-2">
+              <ShieldCheckIcon className="w-6 h-6 text-[#0D3B36]" />
+              <h3 className="font-bold text-sm">Itemized Estimates</h3>
+              <p className="text-[#78716C] leading-relaxed">
+                Written breakdown of co-pays and insurance contributions provided before treatment starts.
+              </p>
+            </div>
+            <div className="bg-white p-6 rounded-xl border border-[#E7E2D8] space-y-2">
+              <ShieldCheckIcon className="w-6 h-6 text-[#0D3B36]" />
+              <h3 className="font-bold text-sm">0% Interest Financing</h3>
+              <p className="text-[#78716C] leading-relaxed">
+                Interest-free CareCredit and Sunbit monthly payment plans starting from $99/mo.
+              </p>
+            </div>
+          </div>
+        </Container>
+      </Section>
+
+      {/* 4. Closing Conversion Banner */}
+      <CtaBanner
+        eyebrow="Have a Specific Question?"
+        title="Ready to experience stress-free care?"
+        description="Schedule your comprehensive 3D digital assessment online or speak directly with our office concierge."
+        primaryCta={
+          <Button href="/book" variant="gold" size="lg" className="shadow-lg">
+            <CalendarIcon className="w-5 h-5 mr-2 text-[#1C1917]" />
+            Book Appointment Online
+          </Button>
+        }
+        secondaryCta={
+          <Button href="tel:5125550199" variant="outline" size="lg" className="text-white border-white/30 hover:bg-white/10 hover:border-white">
+            <PhoneIcon className="w-4 h-4 mr-2 text-white" />
+            Call Concierge (512) 555-0199
+          </Button>
+        }
+      />
+    </div>
+  );
+}
