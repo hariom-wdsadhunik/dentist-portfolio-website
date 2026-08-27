@@ -2,7 +2,7 @@
 
 A premium sample portfolio website for a fictional dental clinic ("Aura Dental Studio"). This project serves as a showcase portfolio/demo application demonstrating modern frontend architecture, accessibility, clean design system integration, and responsive UX.
 
-> **Current Phase**: `PHASE 8 — CORE INTERNAL PAGES IMPLEMENTATION`
+> **Current Phase**: `PHASE 9 — SERVICE DETAIL SYSTEM`
 
 ---
 
@@ -24,6 +24,7 @@ The primary objective of this repository is to build a modern, high-performance 
 
 ## Documentation Index
 
+- [`docs/SERVICE_DETAIL_IMPLEMENTATION.md`](docs/SERVICE_DETAIL_IMPLEMENTATION.md) — Implementation record for the dynamic service detail system (`/services/[slug]`), static route pre-rendering (`generateStaticParams`), service data model, shared UI patterns (`FaqAccordion`, `MetadataRow`), SEO metadata, accessibility, and content claim safety.
 - [`docs/CORE_INTERNAL_PAGES_IMPLEMENTATION.md`](docs/CORE_INTERNAL_PAGES_IMPLEMENTATION.md) — Implementation record for the core internal marketing routes (`/about`, `/services`, `/experience`), reusable shared pattern primitives (`PageHeader`, `Breadcrumbs`, `EditorialSplit`, `CardGrid`, `ProcessSteps`, `CtaBanner`, `RelatedServices`), structured datasets (`servicesData.ts`, `teamData.ts`), responsive/accessibility verification, and SEO metadata.
 - [`docs/INTERNAL_PAGES_ARCHITECTURE.md`](docs/INTERNAL_PAGES_ARCHITECTURE.md) — Comprehensive architecture specification for internal routes (`/about`, `/services`, `/services/[slug]`, `/experience`, `/testimonials`, `/faq`, `/contact`), page taxonomy matrix (Types A-F), shared template shell strategy, routing hierarchy, CTA matrix, content data architecture, SEO schema, and content safety rules.
 - [`docs/SHARED_PAGE_PATTERNS.md`](docs/SHARED_PAGE_PATTERNS.md) — Pattern inventory specifying 10 reusable UI patterns (`PageHeader`, `Breadcrumbs`, `EditorialSplit`, `CardGrid`, `FaqAccordion`, `ProcessSteps`, `TestimonialQuote`, `CtaBanner`, `MetadataRow`, `RelatedServices`) detailing purpose, structure, data inputs, states, accessibility, responsive rules, and target pages.
@@ -53,6 +54,7 @@ dentist-portfolio-website/
 │   ├── INFORMATION_ARCHITECTURE.md
 │   ├── INTERNAL_PAGES_ARCHITECTURE.md
 │   ├── PRODUCT_BRIEF.md
+│   ├── SERVICE_DETAIL_IMPLEMENTATION.md
 │   └── SHARED_PAGE_PATTERNS.md
 ├── public/                      # Static assets
 │   ├── icons/                   # SVG icons & symbols
@@ -62,12 +64,13 @@ dentist-portfolio-website/
 │   │   ├── about/               # About page route
 │   │   ├── experience/          # Experience page route
 │   │   ├── services/            # Services Catalog route
+│   │   │   └── [slug]/          # Dynamic Service Detail route (7 treatments)
 │   │   ├── globals.css
 │   │   ├── layout.tsx
 │   │   └── page.tsx             # Homepage route
 │   ├── components/              # Shared UI primitives, global shell & page patterns
 │   │   ├── global/              # Header, Footer, MobileDrawer, MobileActionBar
-│   │   ├── shared/              # PageHeader, Breadcrumbs, EditorialSplit, CardGrid, ProcessSteps, CtaBanner, RelatedServices
+│   │   ├── shared/              # PageHeader, Breadcrumbs, EditorialSplit, CardGrid, ProcessSteps, FaqAccordion, MetadataRow, CtaBanner, RelatedServices
 │   │   └── ui/                  # Button, Container, Section, Divider, Icons
 │   ├── hooks/                   # Custom React hooks
 │   ├── lib/                     # Homepage structured data & utilities
