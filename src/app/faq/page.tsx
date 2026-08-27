@@ -79,7 +79,7 @@ export default function FaqPage() {
         <Container className="max-w-4xl mx-auto space-y-8">
           <div className="text-center space-y-3">
             <span className="text-xs font-bold uppercase tracking-wider text-[#0D3B36] bg-white px-3 py-1 rounded-full border border-[#E7E2D8] inline-block">
-              Financial Transparency Guarantee
+              Financial Transparency Standard
             </span>
             <h2 className="font-serif text-3xl font-bold text-[#1C1917]">
               PPO Insurance &amp; Flexible Payment Options

@@ -2,7 +2,7 @@
 
 A premium sample portfolio website for a fictional dental clinic ("Aura Dental Studio"). This project serves as a showcase portfolio/demo application demonstrating modern frontend architecture, accessibility, clean design system integration, and responsive UX.
 
-> **Current Phase**: `PHASE 12 — VISUAL ASSETS`
+> **Current Phase**: `PHASE 13 — FULL-SITE QA`
 
 ---
 
@@ -24,6 +24,7 @@ The primary objective of this repository is to build a modern, high-performance 
 
 ## Documentation Index
 
+- [`docs/FULL_SITE_QA.md`](docs/FULL_SITE_QA.md) — Comprehensive full-site quality assurance, accessibility (WCAG 2.2 AA), responsive grid, heading hierarchy, contrast, content claim neutralization, SEO metadata, JSON-LD structured data, and production build verification record.
 - [`docs/VISUAL_ASSETS.md`](docs/VISUAL_ASSETS.md) — Visual asset specification record detailing image art direction, asset inventory (`hero-operatory-visual.svg`, `dentist-portrait-visual.svg`, `clinic-lounge-visual.svg`, `digital-scan-visual.svg`), Next.js `<Image />` optimization, responsive crop rules, alt-text intent, and performance metrics.
 - [`docs/BOOKING_IMPLEMENTATION.md`](docs/BOOKING_IMPLEMENTATION.md) — Implementation record for the interactive 3-step appointment-booking demonstration (`/book`), state model (`BookingFlow`), step components (`BookingProgress`, `BookingServiceStep`, `BookingDateTimeStep`, `BookingDetailsStep`, `BookingSummary`, `BookingConfirmation`, `BookingError`), demo safety disclosures, and mobile action bar safe-area behavior.
 - [`docs/SUPPORT_PAGES_IMPLEMENTATION.md`](docs/SUPPORT_PAGES_IMPLEMENTATION.md) — Implementation record for support & conversion routes (`/testimonials`, `/faq`, `/contact`), data models (`testimonialData.ts`, `faqData.ts`), client-side `ContactForm` validation, demo safety disclaimers, accessibility, and SEO metadata.
@@ -52,6 +53,7 @@ dentist-portfolio-website/
 │   ├── DESIGN_SYSTEM.md
 │   ├── ENGINEERING_CONVENTIONS.md
 │   ├── FRONTEND_FOUNDATION.md
+│   ├── FULL_SITE_QA.md
 │   ├── HOMEPAGE_IMPLEMENTATION.md
 │   ├── HOMEPAGE_QA.md
 │   ├── HOMEPAGE_SPECIFICATION.md

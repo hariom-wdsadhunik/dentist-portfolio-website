@@ -23,7 +23,7 @@ export const CtaBanner: React.FC<CtaBannerProps> = ({
   guarantees = [
     "24/7 Self-Service Booking",
     "Complimentary Validated Parking",
-    "No Surprise Fees Guarantee",
+    "Upfront Transparent Pricing",
   ],
 }) => {
   const isForest = bg === "forest";

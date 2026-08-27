@@ -77,14 +77,14 @@ export default function ExperiencePage() {
               The moment you step into our studio, you will notice the difference. We replaced cold fluorescent lighting and sterile waiting rooms with warm wood tones, natural sunlight, subtle organic aromatherapy, and a peaceful lounge.
             </p>
             <p>
-              We respect your busy schedule with a strict <strong>Zero-Wait Punctuality Guarantee</strong>. Your appointment starts on time, every time, allowing you to relax without feeling rushed.
+              We respect your busy schedule with a strict <strong>Zero-Wait Punctuality Standard</strong>. Your appointment starts on time, every time, allowing you to relax without feeling rushed.
             </p>
           </>
         }
         cta={
           <div className="flex items-center space-x-2.5 p-3 rounded-lg bg-white border border-[#E7E2D8] text-xs text-[#1C1917] inline-flex">
             <ShieldCheckIcon className="w-5 h-5 text-[#0D3B36] shrink-0" />
-            <span>Zero-Wait Punctuality Guarantee</span>
+            <span>Zero-Wait Punctuality Standard</span>
           </div>
         }
       />
