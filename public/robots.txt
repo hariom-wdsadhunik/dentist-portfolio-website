@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+# Aura Dental Studio - Sample Frontend Portfolio Demonstration Website

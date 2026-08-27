@@ -21,6 +21,7 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://aura-dental-studio.demo"),
   title: "Aura Dental Studio | Modern Gentle Dentistry in Downtown Austin",
   description:
     "Experience stress-free oral care with transparent pricing, 3D digital precision, and soothing comfort amenities at Aura Dental Studio in Downtown Austin, TX.",
@@ -32,6 +33,9 @@ export const metadata: Metadata = {
     "Same Day Crowns",
   ],
   authors: [{ name: "Aura Dental Studio Team" }],
+  icons: {
+    icon: "/icon.svg",
+  },
   openGraph: {
     title: "Aura Dental Studio | Modern Gentle Dentistry",
     description:
@@ -39,6 +43,14 @@ export const metadata: Metadata = {
     siteName: "Aura Dental Studio",
     locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: "/og-image.svg",
+        width: 1200,
+        height: 630,
+        alt: "Aura Dental Studio Modern Gentle Dentistry",
+      },
+    ],
   },
 };
 
