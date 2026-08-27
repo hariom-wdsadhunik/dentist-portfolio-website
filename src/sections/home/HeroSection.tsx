@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import Container from "@/components/ui/Container";
 import Section from "@/components/ui/Section";
 import Button from "@/components/ui/Button";
@@ -56,34 +57,18 @@ export const HeroSection: React.FC = () => {
             </div>
           </div>
 
-          {/* Right Column: Architectural Visual Anchor Placeholder */}
+          {/* Right Column: Integrated Visual Asset */}
           <div className="lg:col-span-5">
-            <div className="relative rounded-2xl overflow-hidden bg-[#F4F0E8] border-2 border-[#E7E2D8] p-4 shadow-xl">
-              {/* Gold Accent Outline Frame */}
-              <div className="relative rounded-xl overflow-hidden bg-gradient-to-br from-[#0D3B36] to-[#082824] p-8 text-white min-h-[380px] md:min-h-[440px] flex flex-col justify-between">
-                <div className="space-y-3">
-                  <div className="inline-block px-3 py-1 rounded bg-[#D4A373]/20 border border-[#D4A373]/40 text-xs font-semibold text-[#D4A373]">
-                    Dr. Elena Rostova, DDS, FAGD
-                  </div>
-                  <h2 className="font-serif text-2xl md:text-3xl font-semibold leading-tight text-white">
-                    Gentle Care Led by Clinical Excellence
-                  </h2>
-                  <p className="text-xs md:text-sm text-[#E7E2D8]/80 leading-relaxed">
-                    &ldquo;Our goal is to make every dental visit feel calm, transparent, and completely empowering.&rdquo;
-                  </p>
-                </div>
-
-                {/* Architectural Feature Graphic Placeholder */}
-                <div className="pt-6 border-t border-white/10 flex items-center justify-between text-xs text-[#E7E2D8]/70">
-                  <div className="space-y-1">
-                    <p className="font-medium text-white">Congress Center Operatory</p>
-                    <p>410 Congress Ave, Suite 200</p>
-                  </div>
-                  <div className="text-right">
-                    <span className="inline-block w-2.5 h-2.5 rounded-full bg-[#2D6A4F] mr-1.5 animate-pulse" />
-                    <span>Open Mon - Fri</span>
-                  </div>
-                </div>
+            <div className="relative rounded-2xl overflow-hidden bg-[#F4F0E8] border-2 border-[#E7E2D8] p-3 shadow-xl">
+              <div className="relative aspect-[4/3] rounded-xl overflow-hidden bg-[#0D3B36]">
+                <Image
+                  src="/images/hero-operatory-visual.svg"
+                  alt="Aura Dental Studio Modern Operatory Suite in Downtown Austin"
+                  fill
+                  priority
+                  sizes="(max-width: 1024px) 100vw, 40vw"
+                  className="object-cover"
+                />
               </div>
             </div>
           </div>

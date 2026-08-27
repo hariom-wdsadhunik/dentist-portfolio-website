@@ -1,5 +1,6 @@
 import React from "react";
 import { Metadata } from "next";
+import Image from "next/image";
 import PageHeader from "@/components/shared/PageHeader";
 import EditorialSplit from "@/components/shared/EditorialSplit";
 import ProcessSteps from "@/components/shared/ProcessSteps";
@@ -59,20 +60,14 @@ export default function ExperiencePage() {
         imageSide="left"
         imageNode={
           <div className="relative rounded-2xl overflow-hidden bg-[#F4F0E8] border-2 border-[#E7E2D8] p-3 shadow-lg">
-            <div className="bg-gradient-to-br from-[#0D3B36] to-[#082824] rounded-xl p-8 min-h-[400px] flex flex-col justify-between text-white">
-              <div className="space-y-2">
-                <span className="text-xs font-bold uppercase tracking-wider text-[#D4A373] bg-white/10 px-3 py-1 rounded-full border border-white/20 inline-block">
-                  Downtown Operatory Suite
-                </span>
-                <h3 className="font-serif text-3xl font-bold">Aura Studio Environment</h3>
-                <p className="text-xs text-[#E7E2D8]/80">
-                  Natural sunlight, acoustic dampening, and soothing organic textures.
-                </p>
-              </div>
-              <div className="pt-6 border-t border-white/10 text-xs text-[#E7E2D8]/70 flex items-center justify-between">
-                <span>410 Congress Ave, Suite 200</span>
-                <span className="text-white font-medium">Austin, TX</span>
-              </div>
+            <div className="relative aspect-[16/10] rounded-xl overflow-hidden bg-[#0D3B36]">
+              <Image
+                src="/images/clinic-lounge-visual.svg"
+                alt="Aura Dental Studio Reception Sanctuary Lounge in Downtown Austin"
+                fill
+                sizes="(max-width: 1024px) 100vw, 40vw"
+                className="object-cover"
+              />
             </div>
           </div>
         }
@@ -134,21 +129,14 @@ export default function ExperiencePage() {
         bg="white"
         imageNode={
           <div className="relative rounded-2xl overflow-hidden bg-[#FBF9F5] border-2 border-[#E7E2D8] p-3 shadow-lg">
-            <div className="bg-[#0D3B36] rounded-xl p-8 min-h-[380px] flex flex-col justify-between text-white">
-              <div className="space-y-3">
-                <span className="text-xs font-bold uppercase tracking-wider text-[#D4A373] bg-white/10 px-3 py-1 rounded-full border border-white/20 inline-block">
-                  3D Intraoral Diagnostics
-                </span>
-                <h3 className="font-serif text-2xl md:text-3xl font-bold">
-                  High-Definition Digital Precision
-                </h3>
-                <p className="text-xs text-[#E7E2D8]/80 leading-relaxed">
-                  We render a complete 3D digital model of your teeth in under 60 seconds.
-                </p>
-              </div>
-              <div className="pt-4 border-t border-white/10 text-xs text-[#E7E2D8]/70">
-                ✓ 100% Impression-Free • Low-Radiation Digital Imaging
-              </div>
+            <div className="relative aspect-[16/10] rounded-xl overflow-hidden bg-[#0D3B36]">
+              <Image
+                src="/images/digital-scan-visual.svg"
+                alt="3D Intraoral Digital Scanning Technology at Aura Dental Studio"
+                fill
+                sizes="(max-width: 1024px) 100vw, 40vw"
+                className="object-cover"
+              />
             </div>
           </div>
         }

@@ -2,7 +2,7 @@
 
 A premium sample portfolio website for a fictional dental clinic ("Aura Dental Studio"). This project serves as a showcase portfolio/demo application demonstrating modern frontend architecture, accessibility, clean design system integration, and responsive UX.
 
-> **Current Phase**: `PHASE 11 — BOOKING EXPERIENCE`
+> **Current Phase**: `PHASE 12 — VISUAL ASSETS`
 
 ---
 
@@ -24,6 +24,7 @@ The primary objective of this repository is to build a modern, high-performance 
 
 ## Documentation Index
 
+- [`docs/VISUAL_ASSETS.md`](docs/VISUAL_ASSETS.md) — Visual asset specification record detailing image art direction, asset inventory (`hero-operatory-visual.svg`, `dentist-portrait-visual.svg`, `clinic-lounge-visual.svg`, `digital-scan-visual.svg`), Next.js `<Image />` optimization, responsive crop rules, alt-text intent, and performance metrics.
 - [`docs/BOOKING_IMPLEMENTATION.md`](docs/BOOKING_IMPLEMENTATION.md) — Implementation record for the interactive 3-step appointment-booking demonstration (`/book`), state model (`BookingFlow`), step components (`BookingProgress`, `BookingServiceStep`, `BookingDateTimeStep`, `BookingDetailsStep`, `BookingSummary`, `BookingConfirmation`, `BookingError`), demo safety disclosures, and mobile action bar safe-area behavior.
 - [`docs/SUPPORT_PAGES_IMPLEMENTATION.md`](docs/SUPPORT_PAGES_IMPLEMENTATION.md) — Implementation record for support & conversion routes (`/testimonials`, `/faq`, `/contact`), data models (`testimonialData.ts`, `faqData.ts`), client-side `ContactForm` validation, demo safety disclaimers, accessibility, and SEO metadata.
 - [`docs/SERVICE_DETAIL_IMPLEMENTATION.md`](docs/SERVICE_DETAIL_IMPLEMENTATION.md) — Implementation record for the dynamic service detail system (`/services/[slug]`), static route pre-rendering (`generateStaticParams`), service data model, shared UI patterns (`FaqAccordion`, `MetadataRow`), SEO metadata, accessibility, and content claim safety.
@@ -59,10 +60,11 @@ dentist-portfolio-website/
 │   ├── PRODUCT_BRIEF.md
 │   ├── SERVICE_DETAIL_IMPLEMENTATION.md
 │   ├── SHARED_PAGE_PATTERNS.md
-│   └── SUPPORT_PAGES_IMPLEMENTATION.md
-├── public/                      # Static assets
+│   ├── SUPPORT_PAGES_IMPLEMENTATION.md
+│   └── VISUAL_ASSETS.md
+├── public/                      # Static assets & optimized image system
 │   ├── icons/                   # SVG icons & symbols
-│   └── images/                  # High-resolution media assets
+│   └── images/                  # High-resolution media assets (hero, dentist portrait, clinic lounge, digital scan)
 ├── src/
 │   ├── app/                     # Next.js App Router (pages & layouts)
 │   │   ├── about/               # About page route

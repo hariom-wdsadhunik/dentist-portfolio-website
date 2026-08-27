@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import Container from "@/components/ui/Container";
 import Section from "@/components/ui/Section";
 import Button from "@/components/ui/Button";
@@ -9,21 +10,17 @@ export const DentistSection: React.FC = () => {
     <Section bg="canvas" className="py-16 md:py-24 border-b border-[#E7E2D8]">
       <Container>
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-          {/* Left Column: Portrait Visual Placeholder */}
+          {/* Left Column: Integrated Portrait Asset */}
           <div className="lg:col-span-5">
             <div className="relative rounded-2xl overflow-hidden bg-[#F4F0E8] border-2 border-[#E7E2D8] p-3 shadow-lg">
-              <div className="bg-gradient-to-t from-[#1C1917] via-[#0D3B36] to-[#082824] rounded-xl p-8 min-h-[420px] flex flex-col justify-end text-white">
-                <div className="space-y-2">
-                  <span className="text-xs font-bold uppercase tracking-wider text-[#D4A373] bg-white/10 px-3 py-1 rounded-full border border-white/20 inline-block">
-                    Founder &amp; Lead Dentist
-                  </span>
-                  <h3 className="font-serif text-3xl font-bold">
-                    Dr. Elena Rostova, DDS, FAGD
-                  </h3>
-                  <p className="text-xs text-[#E7E2D8]/80">
-                    15+ Years Practicing Patient-Centered Dentistry in Austin, TX
-                  </p>
-                </div>
+              <div className="relative aspect-[3/4] rounded-xl overflow-hidden bg-[#0D3B36]">
+                <Image
+                  src="/images/dentist-portrait-visual.svg"
+                  alt="Dr. Elena Rostova, DDS, FAGD, Founder & Lead Dentist at Aura Dental Studio"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 35vw"
+                  className="object-cover"
+                />
               </div>
             </div>
           </div>

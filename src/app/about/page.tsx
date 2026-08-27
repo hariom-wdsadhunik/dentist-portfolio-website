@@ -1,5 +1,6 @@
 import React from "react";
 import { Metadata } from "next";
+import Image from "next/image";
 import PageHeader from "@/components/shared/PageHeader";
 import EditorialSplit from "@/components/shared/EditorialSplit";
 import CtaBanner from "@/components/shared/CtaBanner";
@@ -43,16 +44,14 @@ export default function AboutPage() {
         imageSide="left"
         imageNode={
           <div className="relative rounded-2xl overflow-hidden bg-[#F4F0E8] border-2 border-[#E7E2D8] p-3 shadow-lg">
-            <div className="bg-gradient-to-t from-[#1C1917] via-[#0D3B36] to-[#082824] rounded-xl p-8 min-h-[420px] flex flex-col justify-end text-white">
-              <div className="space-y-2">
-                <span className="text-xs font-bold uppercase tracking-wider text-[#D4A373] bg-white/10 px-3 py-1 rounded-full border border-white/20 inline-block">
-                  Founder &amp; Lead Dentist
-                </span>
-                <h3 className="font-serif text-3xl font-bold">Dr. Elena Rostova, DDS, FAGD</h3>
-                <p className="text-xs text-[#E7E2D8]/80">
-                  Fellow, Academy of General Dentistry • 15+ Years Practicing in Austin
-                </p>
-              </div>
+            <div className="relative aspect-[3/4] rounded-xl overflow-hidden bg-[#0D3B36]">
+              <Image
+                src="/images/dentist-portrait-visual.svg"
+                alt="Dr. Elena Rostova, DDS, FAGD, Founder & Lead Dentist"
+                fill
+                sizes="(max-width: 1024px) 100vw, 35vw"
+                className="object-cover"
+              />
             </div>
           </div>
         }
