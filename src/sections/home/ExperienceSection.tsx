@@ -2,8 +2,21 @@ import React from "react";
 import Container from "@/components/ui/Container";
 import Section from "@/components/ui/Section";
 import Button from "@/components/ui/Button";
-import { COMFORT_AMENITIES } from "@/lib/homepageData";
-import { ChevronRightIcon, SparklesIcon } from "@/components/ui/Icons";
+import { COMFORT_AMENITIES, AmenityItem } from "@/lib/homepageData";
+import {
+  ChevronRightIcon,
+  HeadphonesIcon,
+  WavesIcon,
+  SunIcon,
+  HeartIcon,
+} from "@/components/ui/Icons";
+
+const iconMap: Record<AmenityItem["iconName"], React.ReactNode> = {
+  headphones: <HeadphonesIcon className="w-6 h-6 text-[#0D3B36]" />,
+  ultrasonic: <WavesIcon className="w-6 h-6 text-[#0D3B36]" />,
+  towels: <SunIcon className="w-6 h-6 text-[#0D3B36]" />,
+  blanket: <HeartIcon className="w-6 h-6 text-[#0D3B36]" />,
+};
 
 export const ExperienceSection: React.FC = () => {
   return (
@@ -27,10 +40,10 @@ export const ExperienceSection: React.FC = () => {
           {COMFORT_AMENITIES.map((item) => (
             <div
               key={item.id}
-              className="bg-white rounded-xl border border-[#E7E2D8] p-6 space-y-3 shadow-sm hover:shadow-md transition-shadow"
+              className="bg-white rounded-xl border border-[#E7E2D8] p-6 space-y-3.5 shadow-sm hover:shadow-md hover:border-[#0D3B36]/30 transition-all"
             >
-              <div className="w-10 h-10 rounded-lg bg-[#F4F0E8] flex items-center justify-center text-[#0D3B36]">
-                <SparklesIcon className="w-5 h-5 text-[#D4A373]" />
+              <div className="w-12 h-12 rounded-lg bg-[#F4F0E8] flex items-center justify-center border border-[#E7E2D8]">
+                {iconMap[item.iconName]}
               </div>
               <h3 className="font-serif text-xl font-bold text-[#1C1917]">
                 {item.title}

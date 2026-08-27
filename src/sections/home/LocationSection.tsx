@@ -12,7 +12,8 @@ export const LocationSection: React.FC = () => {
           {/* Left Column: Visual Map / Parking Guide Card */}
           <div className="lg:col-span-6">
             <div className="bg-white rounded-2xl border-2 border-[#E7E2D8] p-6 space-y-6 shadow-md">
-              <div className="bg-[#0D3B36] rounded-xl p-8 text-white space-y-4 text-left">
+              {/* Studio Info Card */}
+              <div className="bg-[#0D3B36] rounded-xl p-6 text-white space-y-3 text-left">
                 <div className="inline-block px-3 py-1 rounded bg-white/10 border border-white/20 text-xs font-semibold text-[#D4A373]">
                   Downtown Austin Location
                 </div>
@@ -24,15 +25,35 @@ export const LocationSection: React.FC = () => {
                 </p>
               </div>
 
-              {/* Parking Instructions */}
-              <div className="bg-[#FBF9F5] p-4 rounded-xl border border-[#E7E2D8] text-xs text-[#1C1917] space-y-1.5">
-                <p className="font-bold text-[#0D3B36] flex items-center">
-                  <MapPinIcon className="w-4 h-4 mr-1.5 text-[#0D3B36]" />
-                  Validated Garage Parking Instructions:
-                </p>
-                <p className="text-[#44403C]">
-                  Complimentary 2-hour validated parking in the <strong>Congress Center Garage</strong> (entrance accessible via 4th Street). Bring your garage ticket to front desk concierge for validation.
-                </p>
+              {/* Static SVG Map Graphic Illustration */}
+              <div className="relative rounded-xl border border-[#E7E2D8] bg-[#FBF9F5] p-6 text-center space-y-3 overflow-hidden">
+                <div className="flex items-center justify-between text-xs text-[#78716C] font-semibold border-b border-[#E7E2D8] pb-3">
+                  <span>Downtown Austin Grid</span>
+                  <span className="text-[#0D3B36] font-bold">Congress &amp; 4th St</span>
+                </div>
+
+                <div className="py-6 flex flex-col items-center justify-center space-y-2">
+                  <div className="w-12 h-12 rounded-full bg-[#0D3B36] text-white flex items-center justify-center shadow-lg ring-4 ring-[#D4A373]/30">
+                    <MapPinIcon className="w-6 h-6 text-[#D4A373]" />
+                  </div>
+                  <p className="font-serif text-lg font-bold text-[#1C1917]">
+                    Aura Dental Studio • Suite 200
+                  </p>
+                  <p className="text-xs text-[#44403C] max-w-xs">
+                    Entrance via 410 Congress Lobby Elevator to 2nd Floor
+                  </p>
+                </div>
+
+                {/* Parking Instructions */}
+                <div className="bg-white p-3.5 rounded-lg border border-[#E7E2D8] text-xs text-[#1C1917] text-left space-y-1">
+                  <p className="font-bold text-[#0D3B36] flex items-center">
+                    <MapPinIcon className="w-4 h-4 mr-1.5 text-[#0D3B36]" />
+                    Validated Garage Parking Instructions:
+                  </p>
+                  <p className="text-[#44403C]">
+                    Complimentary 2-hour validated parking in the <strong>Congress Center Garage</strong> (entrance on 4th Street). Bring garage ticket to front concierge.
+                  </p>
+                </div>
               </div>
             </div>
           </div>

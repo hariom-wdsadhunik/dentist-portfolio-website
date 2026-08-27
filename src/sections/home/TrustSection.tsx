@@ -7,6 +7,7 @@ export const TrustSection: React.FC = () => {
   return (
     <Section bg="linen" className="py-10 border-b border-[#E7E2D8]">
       <Container>
+        {/* Metric Grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 divide-y md:divide-y-0 md:divide-x divide-[#E7E2D8]">
           {TRUST_METRICS.map((item, index) => (
             <div
@@ -26,6 +27,13 @@ export const TrustSection: React.FC = () => {
               </span>
             </div>
           ))}
+        </div>
+
+        {/* Explicit Portfolio Demo Disclosure Notice */}
+        <div className="mt-6 text-center">
+          <span className="text-[11px] text-[#78716C]/80 italic">
+            * Illustrative clinical quality standards &amp; brand positioning metrics for fictional portfolio clinic demo.
+          </span>
         </div>
       </Container>
     </Section>
