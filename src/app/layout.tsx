@@ -81,7 +81,7 @@ export default function RootLayout({
         <SkipToContent />
         <MouseEffect />
         <Header />
-        <main id="main-content" className="flex-1 flex flex-col">
+        <main id="main-content" className="flex-1 flex flex-col pb-20 lg:pb-0 overflow-x-hidden w-full">
           {children}
         </main>
         <Footer />

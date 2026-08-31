@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import React, { useState } from "react";
 import Link from "next/link";
@@ -21,7 +21,7 @@ export const Header: React.FC = () => {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-40 w-full bg-[#FBF9F5]/90 backdrop-blur-md border-b border-[#E7E2D8] transition-all">
+    <header className="sticky top-0 z-40 w-full bg-[#FBF9F5]/95 backdrop-blur-md border-b border-[#E7E2D8] transition-all">
       {/* Utility Top Bar (Desktop Only) */}
       <div className="hidden lg:block bg-[#F4F0E8] border-b border-[#E7E2D8] text-xs text-[#44403C] py-2">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
@@ -46,10 +46,10 @@ export const Header: React.FC = () => {
       </div>
 
       {/* Main Header Bar */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-18 lg:h-20 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-18 lg:h-20 flex items-center justify-between gap-2">
         {/* Brand Wordmark / Logo */}
-        <Link href="/" className="flex items-center space-x-2 group focus-visible:outline-none">
-          <span className="font-serif text-2xl lg:text-3xl font-bold tracking-tight text-[#1C1917] group-hover:text-[#0D3B36] transition-colors">
+        <Link href="/" className="flex items-center space-x-2 group focus-visible:outline-none min-w-0">
+          <span className="font-serif text-lg sm:text-xl lg:text-2xl font-bold tracking-tight text-[#1C1917] group-hover:text-[#0D3B36] transition-colors truncate">
             AURA DENTAL STUDIO
           </span>
         </Link>
@@ -75,12 +75,12 @@ export const Header: React.FC = () => {
         </nav>
 
         {/* Desktop Action & Mobile Trigger */}
-        <div className="flex items-center space-x-3">
+        <div className="flex items-center space-x-2 shrink-0">
           {/* Direct Call Button (Mobile) */}
           <a
             href="tel:+919876543210"
             aria-label="Call clinic"
-            className="lg:hidden p-2 text-[#0D3B36] hover:bg-[#F4F0E8] rounded-md transition-colors"
+            className="lg:hidden p-2.5 text-[#0D3B36] hover:bg-[#F4F0E8] rounded-md transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center"
           >
             <PhoneIcon className="w-5 h-5" />
           </a>
@@ -98,7 +98,7 @@ export const Header: React.FC = () => {
             onClick={() => setMobileMenuOpen(true)}
             aria-expanded={mobileMenuOpen}
             aria-label="Open navigation menu"
-            className="lg:hidden p-2 text-[#1C1917] hover:text-[#0D3B36] rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0D3B36]"
+            className="lg:hidden p-2.5 text-[#1C1917] hover:text-[#0D3B36] rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0D3B36] min-h-[44px] min-w-[44px] flex items-center justify-center"
           >
             <MenuIcon className="w-6 h-6" />
           </button>

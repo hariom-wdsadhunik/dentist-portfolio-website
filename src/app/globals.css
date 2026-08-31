@@ -171,3 +171,28 @@ article, .group {
   transition: transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.3s ease;
   will-change: transform;
 }
+
+
+/* ====================================================
+   MOBILE RESPONSIVENESS & OVERFLOW FIXES
+   ==================================================== */
+html, body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Prevent image and text overflow on mobile */
+img, svg, video, canvas {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Touch Friendly Tap Targets */
+@media (max-width: 768px) {
+  button, a {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+}
