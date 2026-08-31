@@ -123,13 +123,13 @@ export default function Home() {
 
   return (
     <>
-      <!-- Top Emergency Announcement Bar -->
+      {/* Top Emergency Announcement Bar */}
       <div className="top-bar">
         <div className="container top-bar-content">
           <div className="top-info">
             <span><i className="fa-solid fa-location-dot"></i> 1244 Medical Parkway, Suite 300</span>
             <span className="divider">|</span>
-            <span><i class="fa-solid fa-clock"></i> Mon - Sat: 8:00 AM - 6:00 PM</span>
+            <span><i className="fa-solid fa-clock"></i> Mon - Sat: 8:00 AM - 6:00 PM</span>
           </div>
           <div className="top-emergency">
             <a href="tel:5125550199" className="emergency-link">
@@ -139,7 +139,7 @@ export default function Home() {
         </div>
       </div>
 
-      <!-- Main Navigation Header -->
+      {/* Main Navigation Header */}
       <header className={`header ${headerScrolled ? "scrolled" : ""}`} id="header">
         <div className="container nav-container">
           <a href="#" className="logo">
@@ -150,7 +150,7 @@ export default function Home() {
             </div>
           </a>
 
-          <!-- Desktop Nav Links -->
+          {/* Desktop Nav Links */}
           <nav className={`nav-menu ${mobileMenuOpen ? "active" : ""}`} id="nav-menu">
             <a href="#home" onClick={() => setMobileMenuOpen(false)} className="nav-link active">Home</a>
             <a href="#services" onClick={() => setMobileMenuOpen(false)} className="nav-link">Services</a>
@@ -176,7 +176,7 @@ export default function Home() {
         </div>
       </header>
 
-      <!-- Hero Section -->
+      {/* Hero Section */}
       <section className="hero" id="home">
         <div className="container hero-grid">
           <div className="hero-content">
@@ -199,7 +199,7 @@ export default function Home() {
               </a>
             </div>
 
-            <!-- Trust Badges -->
+            {/* Trust Badges */}
             <div className="hero-trust">
               <div className="trust-item">
                 <div className="trust-rating">
@@ -249,7 +249,7 @@ export default function Home() {
         </div>
       </section>
 
-      <!-- Key Benefits Banner -->
+      {/* Key Benefits Banner */}
       <section className="banner-features">
         <div className="container banner-grid">
           <div className="feature-box">
@@ -286,7 +286,7 @@ export default function Home() {
         </div>
       </section>
 
-      <!-- Services Section -->
+      {/* Services Section */}
       <section className="section services-section" id="services">
         <div className="container">
           <div className="section-header text-center">
@@ -298,7 +298,7 @@ export default function Home() {
           </div>
 
           <div className="services-grid">
-            <!-- Service 1 -->
+            {/* Service 1 */}
             <div className="service-card">
               <div className="service-icon"><i className="fa-solid fa-teeth"></i></div>
               <h3>Cosmetic Smile Makeover</h3>
@@ -313,7 +313,7 @@ export default function Home() {
               </button>
             </div>
 
-            <!-- Service 2 -->
+            {/* Service 2 */}
             <div className="service-card featured-service">
               <div className="badge-featured">Most Popular</div>
               <div className="service-icon"><i className="fa-solid fa-teeth-open"></i></div>
@@ -329,7 +329,7 @@ export default function Home() {
               </button>
             </div>
 
-            <!-- Service 3 -->
+            {/* Service 3 */}
             <div className="service-card">
               <div className="service-icon"><i className="fa-solid fa-tooth"></i></div>
               <h3>Dental Implants</h3>
@@ -344,7 +344,7 @@ export default function Home() {
               </button>
             </div>
 
-            <!-- Service 4 -->
+            {/* Service 4 */}
             <div className="service-card">
               <div className="service-icon"><i className="fa-solid fa-sparkles"></i></div>
               <h3>Professional Teeth Whitening</h3>
@@ -359,7 +359,7 @@ export default function Home() {
               </button>
             </div>
 
-            <!-- Service 5 -->
+            {/* Service 5 */}
             <div className="service-card">
               <div className="service-icon"><i className="fa-solid fa-shield-virus"></i></div>
               <h3>General &amp; Preventive Care</h3>
@@ -374,7 +374,7 @@ export default function Home() {
               </button>
             </div>
 
-            <!-- Service 6 -->
+            {/* Service 6 */}
             <div className="service-card">
               <div className="service-icon"><i className="fa-solid fa-kit-medical"></i></div>
               <h3>Emergency Dental Care</h3>
@@ -392,7 +392,7 @@ export default function Home() {
         </div>
       </section>
 
-      <!-- Doctor Profile Section -->
+      {/* Doctor Profile Section */}
       <section className="section about-section" id="about">
         <div className="container about-grid">
           <div className="about-image-column">
@@ -458,7 +458,7 @@ export default function Home() {
         </div>
       </section>
 
-      <!-- Before & After Transformation Gallery -->
+      {/* Before & After Transformation Gallery */}
       <section className="section gallery-section" id="transformations">
         <div className="container">
           <div className="section-header text-center">
@@ -470,7 +470,7 @@ export default function Home() {
           </div>
 
           <div className="gallery-grid">
-            <!-- Case 1: Veneers -->
+            {/* Case 1: Veneers */}
             <div className="transformation-card">
               <div className="slider-container">
                 <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=700&q=80" alt="Smile After Veneers" className="img-after" />
@@ -496,7 +496,7 @@ export default function Home() {
               </div>
             </div>
 
-            <!-- Case 2: Invisalign -->
+            {/* Case 2: Invisalign */}
             <div className="transformation-card">
               <div className="slider-container">
                 <img src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&w=700&q=80" alt="Smile After Invisalign" className="img-after" />
@@ -522,7 +522,7 @@ export default function Home() {
               </div>
             </div>
 
-            <!-- Case 3: Whitening -->
+            {/* Case 3: Whitening */}
             <div className="transformation-card">
               <div className="slider-container">
                 <img src="https://images.unsplash.com/photo-1629909615184-74f495363b67?auto=format&fit=crop&w=700&q=80" alt="Smile After Whitening" className="img-after" />
@@ -551,7 +551,7 @@ export default function Home() {
         </div>
       </section>
 
-      <!-- Patient Reviews -->
+      {/* Patient Reviews */}
       <section className="section reviews-section" id="reviews">
         <div className="container">
           <div className="section-header text-center">
@@ -605,7 +605,7 @@ export default function Home() {
         </div>
       </section>
 
-      <!-- FAQ Section -->
+      {/* FAQ Section */}
       <section className="section faq-section" id="faq">
         <div className="container faq-container">
           <div className="section-header text-center">
@@ -651,7 +651,7 @@ export default function Home() {
         </div>
       </section>
 
-      <!-- Contact & Map Section -->
+      {/* Contact & Map Section */}
       <section className="section contact-section" id="contact">
         <div className="container contact-grid">
           <div className="contact-info-col">
@@ -728,7 +728,7 @@ export default function Home() {
         </div>
       </section>
 
-      <!-- Footer -->
+      {/* Footer */}
       <footer className="footer">
         <div className="container footer-content">
           <div className="footer-brand">
@@ -792,7 +792,7 @@ export default function Home() {
         </div>
       </footer>
 
-      <!-- Interactive Appointment Booking Modal -->
+      {/* Interactive Appointment Booking Modal */}
       {modalOpen && (
         <div className="modal-overlay active" id="booking-modal">
           <div className="modal-card">
