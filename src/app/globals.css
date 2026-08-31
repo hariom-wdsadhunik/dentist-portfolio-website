@@ -96,3 +96,78 @@ body {
     scroll-behavior: auto !important;
   }
 }
+
+
+/* ====================================================
+   CUSTOM MOUSE CURSOR & PARTICLE EFFECTS
+   ==================================================== */
+.mouse-cursor-dot {
+  width: 8px;
+  height: 8px;
+  background-color: var(--color-accent-primary);
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 9999;
+  transition: width 0.2s, height 0.2s, background-color 0.2s;
+  box-shadow: 0 0 10px rgba(13, 59, 54, 0.6);
+}
+
+.mouse-cursor-ring {
+  width: 36px;
+  height: 36px;
+  border: 2px solid rgba(13, 59, 54, 0.4);
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 9998;
+  transition: width 0.2s, height 0.2s, border-color 0.2s, background 0.2s;
+}
+
+body.cursor-hover .mouse-cursor-dot {
+  width: 14px;
+  height: 14px;
+  background-color: var(--color-accent-secondary);
+  box-shadow: 0 0 14px rgba(212, 163, 115, 0.9);
+}
+
+body.cursor-hover .mouse-cursor-ring {
+  width: 52px;
+  height: 52px;
+  border-color: rgba(212, 163, 115, 0.7);
+  background: rgba(212, 163, 115, 0.08);
+}
+
+.mouse-particle {
+  width: 6px;
+  height: 6px;
+  background: rgba(13, 59, 54, 0.4);
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9997;
+  transform: translate(-50%, -50%) scale(1);
+  animation: fadeParticle 0.55s ease-out forwards;
+}
+
+@keyframes fadeParticle {
+  0% {
+    opacity: 0.8;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.2);
+  }
+}
+
+article, .group {
+  transition: transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.3s ease;
+  will-change: transform;
+}

@@ -5,6 +5,7 @@ import Header from "@/components/global/Header";
 import Footer from "@/components/global/Footer";
 import MobileActionBar from "@/components/global/MobileActionBar";
 import SkipToContent from "@/components/ui/SkipToContent";
+import MouseEffect from "@/components/ui/MouseEffect";
 
 const cormorantGaramond = Cormorant_Garamond({
   variable: "--font-cormorant",
@@ -78,6 +79,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col bg-[#FBF9F5] text-[#1C1917] font-sans">
         <SkipToContent />
+        <MouseEffect />
         <Header />
         <main id="main-content" className="flex-1 flex flex-col">
           {children}
