@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from "react";
+import React, { useState, useCallback } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { PhoneIcon, MapPinIcon, ClockIcon, MenuIcon } from "@/components/ui/Icons";
@@ -19,6 +19,14 @@ const navItems = [
 export const Header: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const pathname = usePathname();
+
+  const handleOpenMobileMenu = useCallback(() => {
+    setMobileMenuOpen(true);
+  }, []);
+
+  const handleCloseMobileMenu = useCallback(() => {
+    setMobileMenuOpen(false);
+  }, []);
 
   return (
     <header className="sticky top-0 z-40 w-full bg-[#FBF9F5]/95 backdrop-blur-md border-b border-[#E7E2D8] transition-all">
@@ -95,10 +103,10 @@ export const Header: React.FC = () => {
           {/* Mobile Menu Trigger */}
           <button
             type="button"
-            onClick={() => setMobileMenuOpen(true)}
+            onClick={handleOpenMobileMenu}
             aria-expanded={mobileMenuOpen}
             aria-label="Open navigation menu"
-            className="lg:hidden p-2.5 text-[#1C1917] hover:text-[#0D3B36] rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0D3B36] min-h-[44px] min-w-[44px] flex items-center justify-center"
+            className="lg:hidden p-2.5 text-[#1C1917] hover:text-[#0D3B36] active:bg-[#F4F0E8] rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0D3B36] min-h-[44px] min-w-[44px] flex items-center justify-center cursor-pointer relative z-10"
           >
             <MenuIcon className="w-6 h-6" />
           </button>
@@ -108,7 +116,7 @@ export const Header: React.FC = () => {
       {/* Mobile Drawer Component */}
       <MobileDrawer
         isOpen={mobileMenuOpen}
-        onClose={() => setMobileMenuOpen(false)}
+        onClose={handleCloseMobileMenu}
       />
     </header>
   );

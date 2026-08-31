@@ -1,6 +1,6 @@
-"use client";
+'use client';
 
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { CloseIcon, PhoneIcon, MapPinIcon, ClockIcon } from "@/components/ui/Icons";
@@ -23,6 +23,7 @@ const navLinks = [
 
 export const MobileDrawer: React.FC<MobileDrawerProps> = ({ isOpen, onClose }) => {
   const pathname = usePathname();
+  const prevPathname = useRef(pathname);
 
   // Close drawer on ESC key press
   useEffect(() => {
@@ -34,36 +35,41 @@ export const MobileDrawer: React.FC<MobileDrawerProps> = ({ isOpen, onClose }) =
     if (isOpen) {
       window.addEventListener("keydown", handleKeyDown);
       document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
     }
     return () => {
       window.removeEventListener("keydown", handleKeyDown);
-      document.body.style.overflow = "unset";
+      document.body.style.overflow = "";
     };
   }, [isOpen, onClose]);
 
-  // Close drawer on route change
+  // Close drawer ONLY when pathname actually changes
   useEffect(() => {
-    onClose();
+    if (prevPathname.current !== pathname) {
+      prevPathname.current = pathname;
+      onClose();
+    }
   }, [pathname, onClose]);
 
   if (!isOpen) return null;
 
   return (
     <div
-      className="fixed inset-0 z-50 lg:hidden flex"
+      className="fixed inset-0 z-[100] lg:hidden flex"
       role="dialog"
       aria-modal="true"
       aria-labelledby="mobile-drawer-title"
     >
       {/* Backdrop */}
       <div
-        className="fixed inset-0 bg-[#1C1917]/50 backdrop-blur-xs transition-opacity"
+        className="fixed inset-0 bg-[#1C1917]/60 backdrop-blur-sm transition-opacity"
         onClick={onClose}
         aria-hidden="true"
       />
 
       {/* Drawer Body */}
-      <div className="relative ml-auto w-full max-w-xs bg-[#FBF9F5] h-full shadow-2xl flex flex-col z-10 overflow-y-auto">
+      <div className="relative ml-auto w-full max-w-xs bg-[#FBF9F5] h-full shadow-2xl flex flex-col z-[101] overflow-y-auto">
         {/* Header */}
         <div className="flex items-center justify-between px-6 py-5 border-b border-[#E7E2D8]">
           <span
@@ -76,7 +82,7 @@ export const MobileDrawer: React.FC<MobileDrawerProps> = ({ isOpen, onClose }) =
             type="button"
             onClick={onClose}
             aria-label="Close menu"
-            className="p-2 text-[#44403C] hover:text-[#1C1917] rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0D3B36]"
+            className="p-2 text-[#44403C] hover:text-[#1C1917] rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0D3B36] cursor-pointer min-h-[44px] min-w-[44px] flex items-center justify-center"
           >
             <CloseIcon className="w-6 h-6" />
           </button>
