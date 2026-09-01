@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Dental Care | Premium Family & Cosmetic Dentistry</title>
+    <meta name="description" content="State-of-the-art, pain-free dental care. General dentistry, Invisalign, teeth whitening, and dental implants. Book your appointment online today!">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Top Emergency Announcement Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <div class="top-info">
+                <span><i class="fa-solid fa-location-dot"></i> 1244 Medical Parkway, Suite 300</span>
+                <span class="divider">|</span>
+                <span><i class="fa-solid fa-clock"></i> Mon - Sat: 8:00 AM - 6:00 PM</span>
+            </div>
+            <div class="top-emergency">
+                <a href="tel:5125550199" class="emergency-link">
+                    <i class="fa-solid fa-phone-volume"></i> 24/7 Dental Emergency: <strong>(512) 555-0199</strong>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Header -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <div class="logo-icon"><i class="fa-solid fa-tooth"></i></div>
+                <div class="logo-text">
+                    <span class="brand-name">Apex Dental</span>
+                    <span class="brand-sub">Care & Aesthetics</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#about" class="nav-link">About Doctor</a>
+                <a href="#transformations" class="nav-link">Smile Gallery</a>
+                <a href="#reviews" class="nav-link">Reviews</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="btn btn-primary open-booking-modal">
+                    <i class="fa-solid fa-calendar-check"></i> Book Visit
+                </button>
+                <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle Navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg-overlay"></div>
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fa-solid fa-shield-halved"></i> Pain-Free & Gentle Dentistry
+                </div>
+                <h1 class="hero-title">
+                    Transform Your Smile With <span class="gradient-text">World-Class Care</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Experience compassionate, state-of-the-art dental treatment tailored for your entire family. From cosmetic smile makeovers to emergency relief.
+                </p>
+
+                <div class="hero-buttons">
+                    <button class="btn btn-primary btn-lg open-booking-modal">
+                        <i class="fa-solid fa-calendar-days"></i> Schedule Appointment
+                    </button>
+                    <a href="tel:5125550199" class="btn btn-outline btn-lg">
+                        <i class="fa-solid fa-phone"></i> (512) 555-0199
+                    </a>
+                </div>
+
+                <!-- Trust Badges -->
+                <div class="hero-trust">
+                    <div class="trust-item">
+                        <div class="trust-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="score">4.9 / 5.0</span>
+                        </div>
+                        <span class="trust-label">500+ Google Reviews</span>
+                    </div>
+                    <div class="trust-divider"></div>
+                    <div class="trust-item">
+                        <span class="trust-stat">15,000+</span>
+                        <span class="trust-label">Happy Smiles Created</span>
+                    </div>
+                    <div class="trust-divider"></div>
+                    <div class="trust-item">
+                        <span class="trust-stat">0% APR</span>
+                        <span class="trust-label">Flexible Payment Plans</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="hero-card-floating card-experience">
+                    <i class="fa-solid fa-award"></i>
+                    <div>
+                        <strong>18+ Years</strong>
+                        <span>Clinical Excellence</span>
+                    </div>
+                </div>
+                
+                <div class="hero-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1000&q=80" alt="Dr. Sarah Jenkins Dentistry" class="hero-img">
+                </div>
+
+                <div class="hero-card-floating card-tech">
+                    <i class="fa-solid fa-microscope"></i>
+                    <div>
+                        <strong>3D Digital Imaging</strong>
+                        <span>Laser & Intraoral Scanner</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Benefits Banner -->
+    <section class="banner-features">
+        <div class="container banner-grid">
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fa-solid fa-user-doctor"></i></div>
+                <div class="feature-info">
+                    <h3>Licensed Specialists</h3>
+                    <p>Expert dentists trained at top US institutions.</p>
+                </div>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                <div class="feature-info">
+                    <h3>Sedation Dentistry</h3>
+                    <p>Completely anxiety-free & pain-free procedures.</p>
+                </div>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+                <div class="feature-info">
+                    <h3>Insurance Accepted</h3>
+                    <p>We maximize your PPO benefits automatically.</p>
+                </div>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fa-solid fa-truck-medical"></i></div>
+                <div class="feature-info">
+                    <h3>Same-Day Emergencies</h3>
+                    <p>Immediate relief for toothaches & accidents.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section services-section" id="services">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-heading">Comprehensive Dental Care</span>
+                <h2 class="section-title">Services Tailored To Your Health & Confidence</h2>
+                <p class="section-description">
+                    Using cutting-edge dental technology, we deliver comfortable, long-lasting treatment for patients of all ages.
+                </p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-teeth"></i></div>
+                    <h3>Cosmetic Smile Makeover</h3>
+                    <p>Custom porcelain veneers, tooth bonding, and aesthetic reshaping to give you the flawless smile you've always wanted.</p>
+                    <ul class="service-list">
+                        <li><i class="fa-solid fa-check"></i> Porcelain Veneers</li>
+                        <li><i class="fa-solid fa-check"></i> Composite Bonding</li>
+                        <li><i class="fa-solid fa-check"></i> Digital Smile Design</li>
+                    </ul>
+                    <button class="service-btn open-booking-modal" data-service="Cosmetic Dentistry">Learn More & Book <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card featured-service">
+                    <div class="badge-featured">Most Popular</div>
+                    <div class="service-icon"><i class="fa-solid fa-teeth-open"></i></div>
+                    <h3>Invisalign® Clear Aligners</h3>
+                    <p>Straighten your teeth discreetly without bulky metal braces. Removable, virtually invisible, and comfortable.</p>
+                    <ul class="service-list">
+                        <li><i class="fa-solid fa-check"></i> Free 3D iTero Scan</li>
+                        <li><i class="fa-solid fa-check"></i> Faster Treatment Times</li>
+                        <li><i class="fa-solid fa-check"></i> No Food Restrictions</li>
+                    </ul>
+                    <button class="service-btn open-booking-modal" data-service="Invisalign Aligners">Book Free Consultation <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-tooth"></i></div>
+                    <h3>Dental Implants</h3>
+                    <p>Permanent, natural-looking replacement for missing teeth that restores full chewing strength and bone health.</p>
+                    <ul class="service-list">
+                        <li><i class="fa-solid fa-check"></i> Single & Multi-Teeth</li>
+                        <li><i class="fa-solid fa-check"></i> All-on-4® Full Arch</li>
+                        <li><i class="fa-solid fa-check"></i> 98% Success Rate</li>
+                    </ul>
+                    <button class="service-btn open-booking-modal" data-service="Dental Implants">Learn More & Book <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-sparkles"></i></div>
+                    <h3>Professional Teeth Whitening</h3>
+                    <p>In-office Zoom! whitening that brightens your smile up to 8 shades lighter in just 60 minutes.</p>
+                    <ul class="service-list">
+                        <li><i class="fa-solid fa-check"></i> Immediate Results</li>
+                        <li><i class="fa-solid fa-check"></i> Sensitivity-Free Formula</li>
+                        <li><i class="fa-solid fa-check"></i> Custom Touch-up Kits</li>
+                    </ul>
+                    <button class="service-btn open-booking-modal" data-service="Teeth Whitening">Book Whitening <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-shield-virus"></i></div>
+                    <h3>General & Preventive Care</h3>
+                    <p>Comprehensive checkups, ultrasonic cleanings, digital X-rays, and fluoride treatments to keep your mouth healthy.</p>
+                    <ul class="service-list">
+                        <li><i class="fa-solid fa-check"></i> Bi-Annual Cleanings</li>
+                        <li><i class="fa-solid fa-check"></i> Oral Cancer Screenings</li>
+                        <li><i class="fa-solid fa-check"></i> Cavity Prevention</li>
+                    </ul>
+                    <button class="service-btn open-booking-modal" data-service="General Checkup">Schedule Cleaning <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-kit-medical"></i></div>
+                    <h3>Emergency Dental Care</h3>
+                    <p>Fast, immediate care for severe toothaches, broken teeth, lost crowns, or dental trauma. Walk-ins welcome.</p>
+                    <ul class="service-list">
+                        <li><i class="fa-solid fa-check"></i> Same-Day Relief</li>
+                        <li><i class="fa-solid fa-check"></i> Pain Management</li>
+                        <li><i class="fa-solid fa-check"></i> Emergency Extraction</li>
+                    </ul>
+                    <button class="service-btn open-booking-modal" data-service="Emergency Dentistry">Emergency Call <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctor Profile Section -->
+    <section class="section about-section" id="about">
+        <div class="container about-grid">
+            <div class="about-image-column">
+                <div class="doctor-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=800&q=80" alt="Dr. Sarah Jenkins DDS" class="doctor-img">
+                    <div class="doctor-experience-badge">
+                        <span class="exp-num">18+</span>
+                        <span class="exp-text">Years Practice</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-content">
+                <span class="sub-heading">Meet Your Lead Dentist</span>
+                <h2 class="section-title">Dr. Sarah Jenkins, DDS, FAGD</h2>
+                <p class="about-bio">
+                    "My mission is to eliminate dental anxiety and help patients smile with complete confidence. Dentistry shouldn't be stressful—it should be empowering."
+                </p>
+                <p class="about-desc">
+                    Dr. Jenkins graduated with high honors from Columbia University College of Dental Medicine and completed advanced fellowship training in Implantology and Cosmetic Restorations. She actively stays at the forefront of digital dentistry.
+                </p>
+
+                <div class="credentials-grid">
+                    <div class="cred-item">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <div>
+                            <strong>Columbia University</strong>
+                            <span>Doctor of Dental Surgery</span>
+                        </div>
+                    </div>
+                    <div class="cred-item">
+                        <i class="fa-solid fa-certificate"></i>
+                        <div>
+                            <strong>Fellowship Trained</strong>
+                            <span>Academy of General Dentistry</span>
+                        </div>
+                    </div>
+                    <div class="cred-item">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <div>
+                            <strong>Invisalign Premier</strong>
+                            <span>Certified Provider</span>
+                        </div>
+                    </div>
+                    <div class="cred-item">
+                        <i class="fa-solid fa-heart"></i>
+                        <div>
+                            <strong>Compassionate Care</strong>
+                            <span>Gentle Sedation Expert</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-cta">
+                    <button class="btn btn-primary open-booking-modal">Meet Dr. Jenkins</button>
+                    <a href="tel:5125550199" class="about-phone-link"><i class="fa-solid fa-phone"></i> (512) 555-0199</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Before & After Transformation Gallery -->
+    <section class="section gallery-section" id="transformations">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-heading">Real Patient Results</span>
+                <h2 class="section-title">Smile Transformation Gallery</h2>
+                <p class="section-description">Drag the slider on any transformation below to see the dramatic before-and-after results achieved right here in our office.</p>
+            </div>
+
+            <div class="gallery-grid">
+                <!-- Case 1: Veneers -->
+                <div class="transformation-card">
+                    <div class="slider-container" id="slider-1">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=700&q=80" alt="Smile After Veneers" class="img-after">
+                        <div class="img-before-wrapper">
+                            <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=700&q=80" alt="Smile Before Veneers" class="img-before">
+                        </div>
+                        <input type="range" min="0" max="100" value="50" class="slider-range" aria-label="Before and after slider">
+                        <div class="slider-handle"></div>
+                        <span class="label-tag label-before">BEFORE</span>
+                        <span class="label-tag label-after">AFTER</span>
+                    </div>
+                    <div class="card-details">
+                        <h3>Porcelain Veneer Smile Makeover</h3>
+                        <p>Corrected discoloration, chips, and misalignment in just 2 appointments.</p>
+                    </div>
+                </div>
+
+                <!-- Case 2: Invisalign -->
+                <div class="transformation-card">
+                    <div class="slider-container" id="slider-2">
+                        <img src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&w=700&q=80" alt="Smile After Invisalign" class="img-after">
+                        <div class="img-before-wrapper">
+                            <img src="https://images.unsplash.com/photo-1571772996211-2f02c9727629?auto=format&fit=crop&w=700&q=80" alt="Smile Before Invisalign" class="img-before">
+                        </div>
+                        <input type="range" min="0" max="100" value="50" class="slider-range" aria-label="Before and after slider">
+                        <div class="slider-handle"></div>
+                        <span class="label-tag label-before">BEFORE</span>
+                        <span class="label-tag label-after">AFTER</span>
+                    </div>
+                    <div class="card-details">
+                        <h3>Full Invisalign Alignment</h3>
+                        <p>Straightened severe crowding in 7 months with clear removable aligners.</p>
+                    </div>
+                </div>
+
+                <!-- Case 3: Whitening -->
+                <div class="transformation-card">
+                    <div class="slider-container" id="slider-3">
+                        <img src="https://images.unsplash.com/photo-1629909615184-74f495363b67?auto=format&fit=crop&w=700&q=80" alt="Smile After Whitening" class="img-after">
+                        <div class="img-before-wrapper">
+                            <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=700&q=80" alt="Smile Before Whitening" class="img-before">
+                        </div>
+                        <input type="range" min="0" max="100" value="50" class="slider-range" aria-label="Before and after slider">
+                        <div class="slider-handle"></div>
+                        <span class="label-tag label-before">BEFORE</span>
+                        <span class="label-tag label-after">AFTER</span>
+                    </div>
+                    <div class="card-details">
+                        <h3>In-Office Zoom! Whitening</h3>
+                        <p>Removed 10+ years of coffee stains in a single 60-minute session.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Patient Reviews & Social Proof -->
+    <section class="section reviews-section" id="reviews">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-heading">Patient Testimonials</span>
+                <h2 class="section-title">Loved By Over 500+ Local Families</h2>
+            </div>
+
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">
+                        "I used to get severe dental anxiety, but Dr. Jenkins and her staff made me feel completely relaxed. The clinic is spotless and futuristic. My Invisalign results are incredible!"
+                    </p>
+                    <div class="review-author">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Emily R.">
+                        <div>
+                            <strong>Emily Rodriguez</strong>
+                            <span>Verified Patient • Google Review</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">
+                        "Broke my front tooth during a weekend basketball game. Apex Dental got me in within an hour and restored it so seamlessly that even my wife couldn't tell which tooth was repaired!"
+                    </p>
+                    <div class="review-author">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="David K.">
+                        <div>
+                            <strong>David K.</strong>
+                            <span>Emergency Patient • Yelp Review</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">
+                        "The staff goes above and beyond. They checked my PPO insurance coverage beforehand and handled all claims directly. Super transparent pricing and zero surprises."
+                    </p>
+                    <div class="review-author">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&q=80" alt="Jessica M.">
+                        <div>
+                            <strong>Jessica Miller</strong>
+                            <span>Family Patient • Google Review</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Accordion -->
+    <section class="section faq-section" id="faq">
+        <div class="container faq-container">
+            <div class="section-header text-center">
+                <span class="sub-heading">Got Questions?</span>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+            </div>
+
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Do you accept my dental insurance?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! We are in-network with most major dental PPO plans including Delta Dental, Cigna, MetLife, Aetna, Guardian, and Humana. Our team files claims directly on your behalf to maximize your annual benefits.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What if I don't have dental insurance?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We offer our Apex Smile Savings Plan for uninsured patients, which includes 2 cleanings, annual X-rays, and 15-20% off all dental procedures for a low annual fee. We also partner with CareCredit for 0% APR financing options.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How quickly can I be seen for a dental emergency?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We reserve dedicated daily slots specifically for emergency patients. If you are experiencing severe pain, bleeding, or trauma, call us immediately at (512) 555-0199 for same-day priority appointment placement.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Is Invisalign treatment as effective as traditional braces?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely. Modern 3D digital planning allows Invisalign to treat over 90% of orthodontic cases including crowding, gaps, overbites, and crossbites—often 30% faster than traditional wire braces.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Map Section -->
+    <section class="section contact-section" id="contact">
+        <div class="container contact-grid">
+            <div class="contact-info-col">
+                <span class="sub-heading">Visit Our Clinic</span>
+                <h2 class="section-title">We'd Love To See You Smile!</h2>
+                <p>Located in the heart of the city with free private parking behind the building. Fully wheelchair accessible.</p>
+
+                <div class="contact-detail-list">
+                    <div class="contact-detail-item">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                        <div>
+                            <strong>Location Address</strong>
+                            <p>1244 Medical Parkway, Suite 300, Austin, TX 78756</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-detail-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <strong>Call or Text Us</strong>
+                            <p><a href="tel:5125550199">(512) 555-0199</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-detail-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <strong>Email Inquiries</strong>
+                            <p><a href="mailto:care@apexdentalcare.com">care@apexdentalcare.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-detail-item">
+                        <i class="fa-solid fa-clock"></i>
+                        <div>
+                            <strong>Office Hours</strong>
+                            <p>Monday - Friday: 8:00 AM - 6:00 PM<br>Saturday: 9:00 AM - 3:00 PM<br>Sunday: Closed (Emergency Call Line Open)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Booking Card -->
+            <div class="contact-card-form">
+                <h3>Request An Appointment</h3>
+                <p>Fill out this form and our scheduling team will contact you within 15 minutes during business hours.</p>
+
+                <form id="contact-quick-form" class="quick-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Full Name" required class="form-input">
+                    </div>
+                    <div class="form-row">
+                        <input type="tel" placeholder="Phone Number" required class="form-input">
+                        <input type="email" placeholder="Email Address" required class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <select class="form-input" required>
+                            <option value="" disabled selected>Select Service Needed</option>
+                            <option value="General Checkup">General Checkup & Cleaning</option>
+                            <option value="Cosmetic Dentistry">Cosmetic Smile Makeover</option>
+                            <option value="Invisalign">Invisalign® Aligners</option>
+                            <option value="Dental Implants">Dental Implants</option>
+                            <option value="Teeth Whitening">Teeth Whitening</option>
+                            <option value="Emergency Care">Emergency Care</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Preferred day or details (optional)" rows="3" class="form-input"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">
+                        <i class="fa-solid fa-paper-plane"></i> Send Booking Request
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <div class="logo-icon"><i class="fa-solid fa-tooth"></i></div>
+                    <div class="logo-text">
+                        <span class="brand-name">Apex Dental</span>
+                        <span class="brand-sub">Care & Aesthetics</span>
+                    </div>
+                </a>
+                <p>State-of-the-art dental care designed around your comfort and health.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Yelp"><i class="fa-brands fa-yelp"></i></a>
+                    <a href="#" aria-label="Google"><i class="fa-brands fa-google"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Our Services</a></li>
+                    <li><a href="#about">Meet Dr. Jenkins</a></li>
+                    <li><a href="#transformations">Smile Gallery</a></li>
+                    <li><a href="#reviews">Patient Reviews</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Popular Services</h4>
+                <ul>
+                    <li><a href="#services">Invisalign Clear Aligners</a></li>
+                    <li><a href="#services">Porcelain Veneers</a></li>
+                    <li><a href="#services">Dental Implants</a></li>
+                    <li><a href="#services">Teeth Whitening</a></li>
+                    <li><a href="#services">Same-Day Emergency</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-newsletter">
+                <h4>Stay Connected</h4>
+                <p>Subscribe for seasonal dental tips and exclusive whitening promotions.</p>
+                <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-content">
+                <p>&copy; 2026 Apex Dental Care. All Rights Reserved. Sample Portfolio Showcase for Dental Practices.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">HIPAA Compliance</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Appointment Booking Modal -->
+    <div class="modal-overlay" id="booking-modal">
+        <div class="modal-card">
+            <button class="modal-close" id="modal-close-btn">&times;</button>
+            
+            <div class="modal-header">
+                <div class="modal-icon"><i class="fa-solid fa-tooth"></i></div>
+                <h2>Schedule Your Visit</h2>
+                <p>Pick your preferred service, date, and time. No payment required today.</p>
+            </div>
+
+            <form id="modal-booking-form" class="modal-form">
+                <div class="form-group">
+                    <label>Selected Service</label>
+                    <select id="modal-service-select" class="form-input" required>
+                        <option value="General Checkup">General Cleaning & Checkup</option>
+                        <option value="Cosmetic Dentistry">Cosmetic Smile Makeover / Veneers</option>
+                        <option value="Invisalign Aligners">Invisalign® Consultation</option>
+                        <option value="Dental Implants">Dental Implants Consultation</option>
+                        <option value="Teeth Whitening">Zoom! Teeth Whitening</option>
+                        <option value="Emergency Dentistry">Emergency Dental Care</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Preferred Date</label>
+                        <input type="date" required class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label>Preferred Time Slot</label>
+                        <select class="form-input" required>
+                            <option value="Morning (8:00 AM - 12:00 PM)">Morning (8 AM - 12 PM)</option>
+                            <option value="Afternoon (12:00 PM - 4:00 PM)">Afternoon (12 PM - 4 PM)</option>
+                            <option value="Late Afternoon (4:00 PM - 6:00 PM)">Late Afternoon (4 PM - 6 PM)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Patient Full Name</label>
+                    <input type="text" placeholder="e.g. John Doe" required class="form-input">
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Phone Number</label>
+                        <input type="tel" placeholder="(512) 000-0000" required class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" placeholder="john@example.com" required class="form-input">
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block btn-lg">
+                    <i class="fa-solid fa-check-circle"></i> Confirm Booking Request
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+
+    <!-- Custom Interactive Glowing Cursor -->
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-outline" id="cursor-outline"></div>
+
+</body>
+</html>
