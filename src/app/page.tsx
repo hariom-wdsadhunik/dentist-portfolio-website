@@ -20,6 +20,18 @@ export default function Home() {
   const [slider2, setSlider2] = useState(50);
   const [slider3, setSlider3] = useState(50);
 
+  // Service category filter state (UI/UX Pro Max)
+  const [activeCategory, setActiveCategory] = useState("All");
+
+  // Toast Notification State
+  const [toastMessage, setToastMessage] = useState<string | null>(null);
+
+  const showToast = (msg: string) => {
+    setToastMessage(msg);
+    setTimeout(() => setToastMessage(null), 4000);
+  };
+
+
   // Dynamic URL Query Parameter Personalization (e.g. ?practice=Smiles+Dentistry&doctor=Dr.+Smith&phone=512-555-0199)
   const [practiceName, setPracticeName] = useState("{practiceName}");
   const [doctorName, setDoctorName] = useState("Dr. Sarah Jenkins, DDS");
@@ -28,6 +40,16 @@ export default function Home() {
 
   useEffect(() => {
     if (typeof window === "undefined") return;
+
+    // Load LottieFiles Web Player Script dynamically
+    if (typeof window !== "undefined" && !document.getElementById("lottie-player-script")) {
+      const script = document.createElement("script");
+      script.id = "lottie-player-script";
+      script.src = "https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs";
+      script.type = "module";
+      document.head.appendChild(script);
+    }
+
     const params = new URLSearchParams(window.location.search);
     const p = params.get("practice");
     const d = params.get("doctor");
@@ -57,6 +79,16 @@ export default function Home() {
   // Custom Cursor & 3D Tilt Effect
   useEffect(() => {
     if (typeof window === "undefined") return;
+
+    // Load LottieFiles Web Player Script dynamically
+    if (typeof window !== "undefined" && !document.getElementById("lottie-player-script")) {
+      const script = document.createElement("script");
+      script.id = "lottie-player-script";
+      script.src = "https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs";
+      script.type = "module";
+      document.head.appendChild(script);
+    }
+
     if (window.matchMedia("(pointer: coarse)").matches) return;
 
     const dot = document.createElement("div");
@@ -138,7 +170,7 @@ export default function Home() {
 
   const handleFormSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    alert("🎉 Booking Request Received! Our dental office will contact you within 15 minutes to confirm your appointment.");
+    showToast("🎉 Booking Request Received! Our dental office will contact you within 15 minutes to confirm your appointment.");
     setModalOpen(false);
   };
 
@@ -794,7 +826,7 @@ export default function Home() {
           <div className="footer-newsletter">
             <h4>Stay Connected</h4>
             <p>Subscribe for seasonal dental tips and exclusive whitening promotions.</p>
-            <form className="newsletter-form" onSubmit={(e) => { e.preventDefault(); alert("Thank you for subscribing!"); }}>
+            <form className="newsletter-form" onSubmit={(e) => { e.preventDefault(); showToast("✨ Thank you for subscribing to Apex Dental newsletter!"); }}>
               <input type="email" placeholder="Enter your email" required />
               <button type="submit"><i className="fa-solid fa-paper-plane"></i></button>
             </form>
@@ -881,6 +913,19 @@ export default function Home() {
           </div>
         </div>
       )}
+    
+      {/* UI/UX Pro Max Toast Notification */}
+      {toastMessage && (
+        <div className="toast-notification">
+          <i className="fa-solid fa-circle-check"></i>
+          <div>
+            <strong className="block text-sm font-bold">Success</strong>
+            <span className="text-xs opacity-90">{toastMessage}</span>
+          </div>
+        </div>
+      )}
     </>
   );
+}
+
 }
