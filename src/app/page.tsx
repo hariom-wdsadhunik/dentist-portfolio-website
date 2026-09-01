@@ -20,6 +20,27 @@ export default function Home() {
   const [slider2, setSlider2] = useState(50);
   const [slider3, setSlider3] = useState(50);
 
+  // Dynamic URL Query Parameter Personalization (e.g. ?practice=Smiles+Dentistry&doctor=Dr.+Smith&phone=512-555-0199)
+  const [practiceName, setPracticeName] = useState("{practiceName}");
+  const [doctorName, setDoctorName] = useState("Dr. Sarah Jenkins, DDS");
+  const [phoneNum, setPhoneNum] = useState("{phoneNum}");
+  const [cityName, setCityName] = useState("Austin, TX");
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const params = new URLSearchParams(window.location.search);
+    const p = params.get("practice");
+    const d = params.get("doctor");
+    const ph = params.get("phone");
+    const c = params.get("city");
+
+    if (p) setPracticeName(p);
+    if (d) setDoctorName(d.startsWith("Dr.") ? d : `Dr. ${d}`);
+    if (ph) setPhoneNum(ph);
+    if (c) setCityName(c);
+  }, []);
+
+
   // Header scroll detection
   useEffect(() => {
     const handleScroll = () => {
@@ -132,8 +153,8 @@ export default function Home() {
             <span><i className="fa-solid fa-clock"></i> Mon - Sat: 8:00 AM - 6:00 PM</span>
           </div>
           <div className="top-emergency">
-            <a href="tel:5125550199" className="emergency-link">
-              <i className="fa-solid fa-phone-volume"></i> 24/7 Dental Emergency: <strong>(512) 555-0199</strong>
+            <a href="{`tel:${phoneNum.replace(/[^0-9+]/g, '')}`}" className="emergency-link">
+              <i className="fa-solid fa-phone-volume"></i> 24/7 Dental Emergency: <strong>{phoneNum}</strong>
             </a>
           </div>
         </div>
@@ -145,7 +166,7 @@ export default function Home() {
           <a href="#" className="logo">
             <div className="logo-icon"><i className="fa-solid fa-tooth"></i></div>
             <div className="logo-text">
-              <span className="brand-name">Apex Dental</span>
+              <span className="brand-name">{practiceName}</span>
               <span className="brand-sub">Care &amp; Aesthetics</span>
             </div>
           </a>
@@ -194,8 +215,8 @@ export default function Home() {
               <button onClick={() => openBookingModal()} className="btn btn-primary btn-lg">
                 <i className="fa-solid fa-calendar-days"></i> Schedule Appointment
               </button>
-              <a href="tel:5125550199" className="btn btn-outline btn-lg">
-                <i className="fa-solid fa-phone"></i> (512) 555-0199
+              <a href="{`tel:${phoneNum.replace(/[^0-9+]/g, '')}`}" className="btn btn-outline btn-lg">
+                <i className="fa-solid fa-phone"></i> {phoneNum}
               </a>
             </div>
 
@@ -411,7 +432,7 @@ export default function Home() {
 
           <div className="about-content">
             <span className="sub-heading">Meet Your Lead Dentist</span>
-            <h2 className="section-title">Dr. Sarah Jenkins, DDS, FAGD</h2>
+            <h2 className="section-title">{doctorName}</h2>
             <p className="about-bio">
               "My mission is to eliminate dental anxiety and help patients smile with complete confidence. Dentistry shouldn't be stressful—it should be empowering."
             </p>
@@ -452,7 +473,7 @@ export default function Home() {
 
             <div className="about-cta">
               <button onClick={() => openBookingModal()} className="btn btn-primary">Meet Dr. Jenkins</button>
-              <a href="tel:5125550199" className="about-phone-link"><i className="fa-solid fa-phone"></i> (512) 555-0199</a>
+              <a href="{`tel:${phoneNum.replace(/[^0-9+]/g, '')}`}" className="about-phone-link"><i className="fa-solid fa-phone"></i> {phoneNum}</a>
             </div>
           </div>
         </div>
@@ -577,7 +598,7 @@ export default function Home() {
             <div className="review-card">
               <div className="review-stars">★★★★★</div>
               <p className="review-text">
-                "Broke my front tooth during a weekend basketball game. Apex Dental got me in within an hour and restored it so seamlessly that even my wife couldn't tell which tooth was repaired!"
+                "Broke my front tooth during a weekend basketball game. {practiceName} got me in within an hour and restored it so seamlessly that even my wife couldn't tell which tooth was repaired!"
               </p>
               <div className="review-author">
                 <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="David K." />
@@ -625,7 +646,7 @@ export default function Home() {
               },
               {
                 q: "How quickly can I be seen for a dental emergency?",
-                a: "We reserve dedicated daily slots specifically for emergency patients. If you are experiencing severe pain, bleeding, or trauma, call us immediately at (512) 555-0199 for same-day priority appointment placement."
+                a: "We reserve dedicated daily slots specifically for emergency patients. If you are experiencing severe pain, bleeding, or trauma, call us immediately at {phoneNum} for same-day priority appointment placement."
               },
               {
                 q: "Is Invisalign treatment as effective as traditional braces?",
@@ -672,7 +693,7 @@ export default function Home() {
                 <i className="fa-solid fa-phone"></i>
                 <div>
                   <strong>Call or Text Us</strong>
-                  <p><a href="tel:5125550199">(512) 555-0199</a></p>
+                  <p><a href="{`tel:${phoneNum.replace(/[^0-9+]/g, '')}`}">{phoneNum}</a></p>
                 </div>
               </div>
 
@@ -735,7 +756,7 @@ export default function Home() {
             <a href="#" className="logo">
               <div className="logo-icon"><i className="fa-solid fa-tooth"></i></div>
               <div className="logo-text">
-                <span className="brand-name">Apex Dental</span>
+                <span className="brand-name">{practiceName}</span>
                 <span className="brand-sub">Care &amp; Aesthetics</span>
               </div>
             </a>
@@ -782,7 +803,7 @@ export default function Home() {
 
         <div className="footer-bottom">
           <div className="container footer-bottom-content">
-            <p>&copy; 2026 Apex Dental Care. All Rights Reserved. Sample Portfolio Showcase for Dental Practices.</p>
+            <p>&copy; 2026 {practiceName} Care. All Rights Reserved. Sample Portfolio Showcase for Dental Practices.</p>
             <div className="footer-legal">
               <a href="#">Privacy Policy</a>
               <a href="#">Terms of Service</a>
